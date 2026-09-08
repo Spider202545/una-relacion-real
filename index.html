@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Una Relación Real | Redescubre a tu Padre</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN SUPERIOR FIJA -->
+    <nav class="top-nav-bar">
+        <div class="nav-container">
+            <a href="#" class="nav-brand">Una Relación Real</a>
+            
+            <div class="nav-links-scroll">
+                <a href="#guia-introvertidos" class="nav-pill active-pill">🌱 Guía Introvertidos</a>
+                <a href="#peticiones-oracion" class="nav-pill">🙏 Llevar la Carga</a>
+                <a href="#dilemas-juveniles" class="nav-pill">⚡ Dilemas Juveniles</a>
+                <a href="#biblia-interactiva" class="nav-pill">🎧 Biblia Completa</a>
+                <a href="#comunidad-chat" class="nav-pill">💬 Chat en Vivo</a>
+                <a href="#historias-comunidad" class="nav-pill">📖 Testimonios</a>
+                <a href="#muro-global" class="nav-pill">🕊️ Muro Anónimo</a>
+                <a href="#oraciones-reales" class="nav-pill">🌙 Oraciones</a>
+                <a href="#libertad" class="nav-pill">🛡️ Batallas & Pureza</a>
+                <a href="#consuelo" class="nav-pill">🔍 Consuelo</a>
+                <a href="#comunidad-roblox" class="nav-pill">🎮 Roblox</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Widget Flotante de Ambiente -->
+    <div class="ambient-widget">
+        <button id="btn-ambient" class="widget-btn" title="Sonido ambiental para reflexionar">
+            <span id="ambient-icon">♪</span>
+            <span id="ambient-label">Música / Calma</span>
+        </button>
+    </div>
+
+    <!-- Cabecera / Hero -->
+    <header class="hero">
+        <div class="container">
+            <span class="badge">100% Seguro · Sin juicios ni registros</span>
+            <h1>Más que reglas, una relación real.</h1>
+            <p class="subtitle">Dios nunca buscó seguidores por obligación. Él busca una amistad sincera, diaria y sin máscaras contigo.</p>
+            <div class="hero-actions">
+                <a href="#guia-introvertidos" class="btn-primary">Guía para introvertidos y confianza</a>
+                <a href="#peticiones-oracion" class="btn-secondary">Peticiones de oración en comunidad</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- NUEVA SECCIÓN: GUÍA PARA INTROVERTIDOS, SOCIALIZAR Y SUPERAR EL MIEDO AL RECHAZO -->
+    <section id="guia-introvertidos" class="section introverts-guide-section">
+        <div class="container">
+            <div class="guide-badge-wrapper">
+                <span class="guide-badge">Tu personalidad no es un error</span>
+            </div>
+            <h2 class="section-title">Refugio para introvertidos: Conectar sin perder tu esencia</h2>
+            <p class="section-subtitle">Ser callado, analítico y reservado no es un defecto que tengas que arreglar. Es tu forma de habitar el mundo. Aprende a hacer amistades reales y soltar el miedo al rechazo a tu propio ritmo.</p>
+
+            <!-- Pilares Fundamentales -->
+            <div class="introvert-pillars-grid">
+                <div class="pillar-card">
+                    <span class="pillar-icon">🎯</span>
+                    <h3>Ser callado es una fortaleza</h3>
+                    <p>En un mundo donde todos gritan para llamar la atención, <strong>saber escuchar con atención</strong> y ser observador es un don escaso. No necesitas transformarte en un payaso ni fingir energía que no tienes para ser valioso.</p>
+                </div>
+
+                <div class="pillar-card">
+                    <span class="pillar-icon">🛡️</span>
+                    <h3>La verdad del rechazo</h3>
+                    <p>Si te acercas con respeto y alguien es cortante o distante, <strong>el 95% de las veces no tiene que ver contigo</strong>, sino con sus propias batallas, estrés o inseguridades. Que alguien no conecte no te resta ni un gramo de valor.</p>
+                </div>
+
+                <div class="pillar-card">
+                    <span class="pillar-icon">☕</span>
+                    <h3>Calidad sobre cantidad</h3>
+                    <p>Los introvertidos se agotan en fiestas de 20 personas, pero brillan en charlas de uno a uno caminando o tomando algo. Tu meta no es tener 50 conocidos; es cultivar <strong>dos o tres amistades profundas y leales</strong>.</p>
+                </div>
+            </div>
+
+            <!-- Panel de Situaciones Prácticas Paso a Paso -->
+            <div class="introvert-toolkit-card">
+                <div class="toolkit-header">
+                    <span class="tool-badge">Herramientas Cotidianas</span>
+                    <h3>¿Qué situación te cuesta más enfrentar?</h3>
+                    <p>Toca una situación para ver cómo actuar paso a paso sin sobrepensar:</p>
+                </div>
+
+                <div class="toolkit-tabs">
+                    <button class="btn-tool-tab active" data-tool="llegar-nuevo">Llegar a un lugar donde no conozco a nadie</button>
+                    <button class="btn-tool-tab" data-tool="romper-hielo">Cómo romper el hielo sin dar cringe</button>
+                    <button class="btn-tool-tab" data-tool="me-ignoraron">Qué hacer si me ignoran o son cortantes</button>
+                    <button class="btn-tool-tab" data-tool="quedarse-en-blanco">Me quedo en blanco y hay silencio</button>
+                </div>
+
+                <div class="toolkit-display-box">
+                    <h4 id="tool-title">Llegar a un lugar donde no conozco a nadie</h4>
+                    <p id="tool-desc" class="tool-main-text">No busques al grupo más ruidoso del salón. Entra con calma, respira hondo y busca a alguien que también esté apartado o con el celular. Acércate con una pregunta de contexto situacional simple: 'Hola, disculpa, ¿sabes a qué hora arranca esto?' o '¿te molesta si me siento por acá?'.</p>
+                    <div class="tool-action-point">
+                        <span class="point-label">Clave para tu mente:</span>
+                        <p id="tool-takeaway">No tienes que impresionar a nadie; solo tienes que estar presente. El valor ya lo traes puesto desde casa.</p>
+                    </div>
+                </div>
+
+                <!-- Oración de Confianza para antes de salir -->
+                <div class="introvert-prayer-box">
+                    <div class="prayer-box-top">
+                        <span class="box-icon">🕊️</span>
+                        <div>
+                            <strong>Oración de 30 segundos antes de interactuar:</strong>
+                            <small>Léela antes de salir de tu pieza o entrar a un lugar con gente</small>
+                        </div>
+                    </div>
+                    <p class="introvert-prayer-quote">"Papá, tú me conoces: sabes que me cuesta soltar la guardia y que a veces el miedo a hacer el ridículo o ser rechazado me aprieta el pecho. Recuérdame que mi valor no depende de la aprobación de nadie hoy. Dame calma para ser yo mismo sin máscaras, pon en mi camino a personas con buen corazón y ayúdame a ser un refugio de paz para quien se cruce conmigo."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: PETICIONES DE ORACIÓN INTERACTIVAS (LLEVAR LA CARGA JUNTOS) -->
+    <section id="peticiones-oracion" class="section prayer-requests-section">
+        <div class="container">
+            <div class="guide-badge-wrapper">
+                <span class="guide-badge">Acompañamiento Mutuo</span>
+            </div>
+            <h2 class="section-title">Llevar la carga juntos</h2>
+            <p class="section-subtitle">Nadie fue hecho para aguantar el peso solo. Deja tu motivo de oración o presiona el botón para sostener a otros en silencio.</p>
+
+            <div class="prayer-request-form-card">
+                <form id="prayer-request-form">
+                    <div class="prayer-req-inputs-row">
+                        <input type="text" id="req-author-input" placeholder="Tu nombre, apodo o 'Anónimo' (ej. Carlos, 19)" required maxlength="30">
+                        <input type="text" id="req-topic-input" placeholder="Motivo breve (ej. Mi familia, Examen de mañana, Ansiedad)" required maxlength="35">
+                    </div>
+                    <textarea id="req-details-input" placeholder="Describe brevemente qué estás viviendo y cómo podemos sostenerte hoy..." required maxlength="280"></textarea>
+                    <div class="prayer-req-footer">
+                        <span class="privacy-note">🔒 Filtro de respeto activo · Cero burlas ni ofensas</span>
+                        <button type="submit" class="btn-primary">Publicar petición de oración</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="prayer-requests-feed" class="prayer-requests-grid"></div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: BUSCADOR DE RESPUESTAS DIRECTAS (DILEMAS JUVENILES) -->
+    <section id="dilemas-juveniles" class="section dilemmas-section">
+        <div class="container">
+            <div class="guide-badge-wrapper">
+                <span class="guide-badge">Sin Tabúes Ni Rodeos</span>
+            </div>
+            <h2 class="section-title">Dilemas éticos y juveniles sin rodeos</h2>
+            <p class="section-subtitle">Preguntas que muchos se hacen en silencio pero pocos responden con honestidad y amor.</p>
+
+            <div class="dilemmas-search-box">
+                <div class="search-input-wrapper">
+                    <input type="text" id="dilemma-search-input" placeholder="Busca por tema (ej. 'videojuegos', 'alcohol', 'no encajo', 'pensamientos intrusivos')...">
+                </div>
+                <div class="dilemmas-quick-categories">
+                    <button class="dilemma-cat-btn active" data-cat="todos">Todos</button>
+                    <button class="dilemma-cat-btn" data-cat="musica-juegos">Música & Videojuegos</button>
+                    <button class="dilemma-cat-btn" data-cat="presion-social">Presión Social & Amistades</button>
+                    <button class="dilemma-cat-btn" data-cat="mente-dudas">Mente & Dudas</button>
+                    <button class="dilemma-cat-btn" data-cat="iglesia-religion">Iglesia & Religiosidad</button>
+                </div>
+            </div>
+
+            <div id="dilemmas-cards-container" class="dilemmas-grid"></div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: BIBLIA COMPLETA -->
+    <section id="biblia-interactiva" class="section bible-reader-section">
+        <div class="container">
+            <div class="guide-badge-wrapper">
+                <span class="guide-badge">66 Libros · Génesis a Apocalipsis</span>
+            </div>
+            <h2 class="section-title">La Biblia Completa en Lenguaje Actual</h2>
+            <p class="section-subtitle">Lee o escucha cualquier capítulo de las Escrituras sin términos arcaicos ni barreras. Conoce a tu Padre a tu propio ritmo.</p>
+
+            <div class="bible-selector-card">
+                <div class="selector-row">
+                    <div class="select-group">
+                        <label for="bible-testament-select">Testamento:</label>
+                        <select id="bible-testament-select">
+                            <option value="nuevo">Nuevo Testamento (27 Libros)</option>
+                            <option value="antiguo">Antiguo Testamento (39 Libros)</option>
+                        </select>
+                    </div>
+                    <div class="select-group">
+                        <label for="bible-book-select">Libro:</label>
+                        <select id="bible-book-select"></select>
+                    </div>
+                    <div class="select-group">
+                        <label for="bible-chapter-select">Capítulo:</label>
+                        <select id="bible-chapter-select"></select>
+                    </div>
+                </div>
+
+                <div class="bible-audio-bar">
+                    <div class="audio-info">
+                        <span class="audio-icon">🎧</span>
+                        <div>
+                            <strong id="audio-book-title">Marcos 1</strong>
+                            <span class="audio-sub">Narración continua con voz natural</span>
+                        </div>
+                    </div>
+                    <div class="audio-controls">
+                        <button id="btn-audio-play" class="btn-audio-action play">▶ Escuchar capítulo</button>
+                        <button id="btn-audio-stop" class="btn-audio-action stop" style="display: none;">⏹ Detener</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bible-reading-view">
+                <div class="reading-header">
+                    <div>
+                        <span id="reading-version-badge" class="version-tag">Traducción Clara & Directa</span>
+                        <h3 id="reading-title-display">Cargando pasaje...</h3>
+                    </div>
+                    <span id="reading-reading-time" class="time-read-tag">⏱ Lectura estimada</span>
+                </div>
+
+                <div id="reading-verses-container" class="verses-content-area"></div>
+
+                <div class="bible-teaching-box">
+                    <div class="teaching-header">
+                        <span class="teaching-icon">💡</span>
+                        <h4>Entiéndelo fácil: ¿Qué nos enseña este libro hoy?</h4>
+                    </div>
+                    <p id="reading-teaching-text" class="teaching-text"></p>
+                    <div class="teaching-takeaway">
+                        <span class="takeaway-label">La verdad para tu vida:</span>
+                        <p id="reading-takeaway-text"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: CHAT & COMUNIDAD GLOBAL CON FILTRO ROBLOX -->
+    <section id="comunidad-chat" class="section community-section-main">
+        <div class="container">
+            <div class="community-badge-wrapper">
+                <span class="community-badge">Espacio Seguro Global · Abierto a Todos</span>
+            </div>
+            <h2 class="section-title">Sala de Encuentro & Comunidad en Vivo</h2>
+            <p class="section-subtitle">Un rincón para compartir testimonios, conversar y acompañarse sin importar tu país o creencia. Protegido con filtro anti-toxicidad.</p>
+
+            <div class="chat-app-box">
+                <div id="chat-login-screen" class="chat-login-view">
+                    <div class="chat-gate-icon">💬</div>
+                    <h3>Elige cómo quieres que te llamemos</h3>
+                    <p>Ingresa un apodo, tu nombre o tu país para entrar a la sala. <strong>No se permiten nombres obscenos, vulgares o +18.</strong></p>
+                    
+                    <form id="chat-login-form" class="gate-form">
+                        <input type="text" id="chat-username-input" placeholder="Tu apodo (ej. Matías, Sofía, Buscador22)" maxlength="22" required autocomplete="off">
+                        <button type="submit" class="btn-primary">Entrar al Chat</button>
+                    </form>
+                    <div id="gate-error-msg" class="gate-error"></div>
+                    <small class="gate-disclaimer">Filtro activo estilo Roblox: cualquier mensaje inmoral se censura con ######.</small>
+                </div>
+
+                <div id="chat-active-screen" class="chat-active-view" style="display: none;">
+                    <div class="chat-topbar">
+                        <div class="user-pill-info">
+                            <span class="online-indicator"></span>
+                            <span>Conectado como: <strong id="current-user-display">Usuario</strong></span>
+                        </div>
+                        <div class="topbar-actions">
+                            <span class="filter-tag-pill">Filtro ###### Activo</span>
+                            <button id="btn-logout-chat" class="btn-text-muted" title="Cambiar apodo o salir">Cambiar apodo</button>
+                        </div>
+                    </div>
+
+                    <div class="chat-rules-banner">
+                        <span>🛡️ Respeto total: cero debates destructivos, cero ataques religiosos. Todos son bienvenidos.</span>
+                    </div>
+
+                    <div id="chat-messages-container" class="chat-messages-scroll"></div>
+
+                    <form id="chat-send-form" class="chat-input-bar">
+                        <input type="text" id="chat-message-input" placeholder="Escribe un mensaje de ánimo, tu experiencia o pide que te acompañen..." maxlength="300" required autocomplete="off">
+                        <button type="submit" class="btn-primary btn-send">Enviar</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="sos-human-card">
+                <div class="sos-human-header">
+                    <span class="sos-alert-icon">🆘</span>
+                    <div>
+                        <h3>¿Sientes que estás en tu límite o pensando en no seguir viviendo?</h3>
+                        <p>Por favor, no cargues con esto a solas en tu pieza esta noche. Tu vida es valiosa y hay personas dispuestas a escucharte sin juzgar en este momento.</p>
+                    </div>
+                </div>
+                <div class="sos-helplines-grid">
+                    <div class="helpline-item">
+                        <span class="help-country">Línea Gratuita de Prevención (Chile)</span>
+                        <a href="tel:*4141" class="help-number">*4141</a>
+                        <span class="help-note">Gratis 24/7 desde cualquier celular (Ministerio de Salud)</span>
+                    </div>
+                    <div class="helpline-item">
+                        <span class="help-country">Salud Responde / Apoyo Emocional</span>
+                        <a href="tel:6003607777" class="help-number">600 360 7777</a>
+                        <span class="help-note">Atención psicológica gratuita y confidencial</span>
+                    </div>
+                    <div class="helpline-item">
+                        <span class="help-country">Otros Países / Internacional</span>
+                        <a href="https://findahelpline.com" target="_blank" class="help-number link-external">Ver líneas de tu país</a>
+                        <span class="help-note">Directorio global de líneas de crisis gratuitas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: HISTORIAS, ANÉCDOTAS Y TESTIMONIOS -->
+    <section id="historias-comunidad" class="section testimonials-section">
+        <div class="container">
+            <h2 class="section-title">No estás solo en esto</h2>
+            <p class="section-subtitle">Personas que vivieron lo mismo: frialdad religiosa, caídas, dudas o soledad. Deja tu nombre y tu historia para que otros vean que hay salida.</p>
+
+            <div class="share-story-form-card">
+                <div class="share-story-header">
+                    <span class="share-icon">✍️</span>
+                    <div>
+                        <h3>Comparte tu historia o anécdota</h3>
+                        <p>Tu experiencia puede ser exactamente la luz que otro joven necesita leer hoy para no rendirse.</p>
+                    </div>
+                </div>
+
+                <form id="share-story-form">
+                    <div class="story-inputs-row">
+                        <input type="text" id="story-author-input" placeholder="Tu nombre o apodo (ej. Mateo, 20 años / Sofía)" required maxlength="35">
+                        <input type="text" id="story-badge-input" placeholder="Etiqueta breve (ej. De la culpa a la paz, Venciendo el miedo)" required maxlength="30">
+                    </div>
+                    <textarea id="story-content-input" placeholder="Cuenta tu testimonio, anécdota o lo que pasaste: cómo te sentías, qué descubriste con tu Padre y cómo lograste salir adelante..." required></textarea>
+                    <div class="story-form-footer">
+                        <span id="story-filter-notice" class="story-filter-notice">🔒 Filtro de respeto activo (palabras ofensivas se censuran con ######)</span>
+                        <button type="submit" class="btn-primary">Publicar mi historia</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="stories-grid-feed" class="testimonials-grid"></div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: Muro Global de Desahogo con Respuesta del Padre -->
+    <section id="muro-global" class="section wall-section">
+        <div class="container">
+            <h2 class="section-title">El Muro de Desahogo y Cartas de tu Padre</h2>
+            <p class="section-subtitle">Escribe lo que tienes guardado por dentro. Al soltarlo, recibirás una respuesta directa y sincera de parte de Él para ese dolor o cansancio exacto.</p>
+
+            <div class="global-wall-form-box">
+                <form id="global-wall-form">
+                    <div class="form-row-top">
+                        <select id="testimony-tag" aria-label="Categoría del desahogo">
+                            <option value="Batallas con la pureza">Batallas con la pureza / Pornografía / Culpa</option>
+                            <option value="Desahogo profundo">Cansancio de todo / Vacío</option>
+                            <option value="En medio del dolor">Dolor, pérdida o tristeza</option>
+                            <option value="Dudas y batallas">Miedo al futuro o dudas sinceras</option>
+                            <option value="Agradecimiento sincero">Agradecimiento sincero</option>
+                        </select>
+                        <span class="privacy-note">🔒 Totalmente anónimo · Nadie sabe quién eres</span>
+                    </div>
+
+                    <textarea id="testimony-input" placeholder="Cuéntale lo que te pasó hoy, si caíste de nuevo, si te sientes solo o si tienes rabia... No te guardes nada. Escribe sin límites de espacio." required></textarea>
+
+                    <div class="form-row-bottom">
+                        <span class="anon-label">Publicarás como: <strong>Voz Anónima</strong></span>
+                        <button type="submit" class="btn-primary">Soltar carga y escuchar su respuesta</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="wall-filters">
+                <span class="filter-title">Filtrar por:</span>
+                <button class="filter-btn active" data-filter="todos">Todos</button>
+                <button class="filter-btn" data-filter="Batallas con la pureza">Pureza y Culpa</button>
+                <button class="filter-btn" data-filter="Desahogo profundo">Cansancio</button>
+                <button class="filter-btn" data-filter="En medio del dolor">Dolor</button>
+                <button class="filter-btn" data-filter="Dudas y batallas">Dudas</button>
+                <button class="filter-btn" data-filter="Agradecimiento sincero">Agradecimientos</button>
+            </div>
+
+            <div id="testimonies-feed" class="testimonies-feed-grid"></div>
+        </div>
+    </section>
+
+    <!-- Sección: Palabras cuando no tienes palabras -->
+    <section id="oraciones-reales" class="section prayers-section">
+        <div class="container">
+            <div class="prayer-badge-wrapper">
+                <span class="prayer-badge">Sin frases hechas</span>
+            </div>
+            <h2 class="section-title">Palabras cuando no tienes palabras</h2>
+            <p class="section-subtitle">A veces la mente se bloquea y no sabemos qué decir. Toca una situación real y haz tuya esta conversación con tu Padre.</p>
+
+            <div class="prayers-selector-grid">
+                <button class="prayer-btn active" data-prayer="insomnio">🌙 Insomnio a las 3:00 AM</button>
+                <button class="prayer-btn" data-prayer="familia">🏠 Peleas o tensión en casa</button>
+                <button class="prayer-btn" data-prayer="examen">📚 Pánico por examen o futuro</button>
+                <button class="prayer-btn" data-prayer="silencio">🌫️ Cuando sientes a Dios en silencio</button>
+                <button class="prayer-btn" data-prayer="soledad">🌧️ Soledad profunda en fin de semana</button>
+                <button class="prayer-btn" data-prayer="rabia">⚡ Rabia o frustración con la vida</button>
+            </div>
+
+            <div class="prayer-display-card">
+                <div class="prayer-card-header">
+                    <span id="prayer-scenario-tag" class="prayer-scenario-tag">Situación: Insomnio y mente saturada</span>
+                    <button id="btn-copy-prayer" class="btn-copy-sm">Copiar oración</button>
+                </div>
+                
+                <blockquote id="prayer-text" class="prayer-quote">
+                    "Papá, son las tres de la mañana y mi cabeza sigue dando vueltas a mil cosas que no puedo resolver ahora. Siento un nudo en el estómago y me cansa no poder apagar este ruido. Hoy no vengo a pedirte cosas con elocuencia; solo vengo a decirte que estoy cansado. Toma mis pendientes, mis dudas de mañana y el miedo a fallar. Te entrego esta noche. Acompáñame en esta pieza en silencio y dame la tranquilidad para cerrar los ojos sabiendo que tú estás despierto cuidando de mí."
+                </blockquote>
+
+                <div class="prayer-card-footer">
+                    <div class="father-whisper">
+                        <span class="whisper-icon">🕊️</span>
+                        <span id="prayer-father-whisper">Lo que tu Padre te responde: "Suelta la guardia, hijo. El mundo sigue girando bajo mi cuidado; tú solo descansa hoy."</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Lujuria, Culpa y Libertad Real -->
+    <section id="libertad" class="section freedom-section">
+        <div class="container">
+            <div class="freedom-badge-wrapper">
+                <span class="freedom-badge">Para quien lucha en secreto</span>
+            </div>
+            <h2 class="section-title">No eres una mala persona por tener esta batalla</h2>
+            <p class="section-subtitle">Si caíste hoy, ayer o llevas años atrapado en la pornografía y la masturbación, respira hondo: tu Padre no te mira con asco ni te ha cerrado la puerta.</p>
+
+            <div class="freedom-grid">
+                <div class="freedom-card">
+                    <div class="freedom-icon">🌿</div>
+                    <h3>El engaño del ciclo de culpa</h3>
+                    <p>Casi nadie busca el porno por maldad pura; se busca como anestesia ante la soledad, el estrés, la ansiedad o el vacío. Luego viene la vergüenza, te dices que eres una basura y te alejas de Dios creyendo que está furioso. Esa distancia te deja más vulnerable y vuelves a caer. <strong>El primer paso para ser libre no es odiarte más, es romper el ciclo acudiendo a tu Padre de inmediato.</strong></p>
+                </div>
+
+                <div class="freedom-card highlight-card">
+                    <div class="freedom-icon">🛡️</div>
+                    <h3>Él odia lo que te destruye, no a ti</h3>
+                    <p>Dios no rechaza tu persona; aborrece la trampa porque sabe que te roba la paz, distorsiona tu mente y te aísla en una celda silenciosa. Estás vivo hoy porque su amor por ti sigue intacto. Si caíste hace diez minutos, no esperes tres días "para que se le pase el enojo" antes de orar: <strong>háblale con las manos vacías y dile: 'Papá, caí de nuevo, no puedo solo con esto, levántame'.</strong></p>
+                </div>
+
+                <div class="freedom-card">
+                    <div class="freedom-icon">⏳</div>
+                    <h3>Salir es un proceso, no magia de un día</h3>
+                    <p>La libertad rara vez ocurre de la noche a la mañana. Puede que avances tres días, tropieces, luego avances una semana y vuelvas a caer. Cada recaída no borra el terreno ganado. Identifica qué sientes antes de caer (¿aburrimiento?, ¿tristeza?) y cambia de ambiente físico antes de que la mente tome el control.</p>
+                </div>
+            </div>
+
+            <div class="urge-sos-box">
+                <div class="sos-content">
+                    <h3>¿Estás a punto de caer o acabas de fallar ahora mismo?</h3>
+                    <p>No huyas ni te encierres en la oscuridad. Toca el botón para leer lo que tu Padre te dice en este segundo exacto:</p>
+                    <div class="sos-actions">
+                        <button id="btn-sos-temptation" class="btn-sos">Siento el impulso ahora mismo</button>
+                        <button id="btn-sos-relapse" class="btn-sos secondary">Acabo de caer y siento culpa</button>
+                    </div>
+                </div>
+                <div id="sos-message-display" class="sos-message" style="display: none;">
+                    <h4 id="sos-title"></h4>
+                    <p id="sos-text"></p>
+                    <small id="sos-quote"></small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buscador de Consuelo por Emoción -->
+    <section id="consuelo" class="section comfort-section">
+        <div class="container">
+            <h2 class="section-title">¿Qué llevas en el pecho ahora mismo?</h2>
+            <p class="section-subtitle">Escribe tu emoción o selecciona una etiqueta para recibir una verdad sincera para tu corazón.</p>
+
+            <div class="comfort-search-box">
+                <div class="search-input-wrapper">
+                    <input type="text" id="comfort-input" placeholder="Escribe aquí (ej. 'miedo al futuro', 'siento que no avanzo', 'culpa', 'soledad')...">
+                    <button id="btn-search-comfort" class="btn-primary">Buscar consuelo</button>
+                </div>
+
+                <div class="quick-tags">
+                    <span>Sugerencias rápidas:</span>
+                    <button class="tag-quick-btn" data-query="no avanzo">Siento que no avanzo</button>
+                    <button class="tag-quick-btn" data-query="miedo al futuro">Miedo al futuro</button>
+                    <button class="tag-quick-btn" data-query="culpa">Culpa por fallar</button>
+                    <button class="tag-quick-btn" data-query="soledad">Me siento solo</button>
+                    <button class="tag-quick-btn" data-query="cansancio">Cansancio de todo</button>
+                </div>
+            </div>
+
+            <div id="comfort-result" class="comfort-card-result" style="display: none;">
+                <div class="comfort-card-header">
+                    <span class="comfort-badge" id="comfort-badge">Para este momento</span>
+                    <span class="comfort-source">Una verdad para hoy</span>
+                </div>
+                <h3 id="comfort-headline">Título del consuelo</h3>
+                <p id="comfort-message" class="comfort-body-text">Mensaje central.</p>
+                <div class="comfort-card-footer">
+                    <span class="comfort-verse" id="comfort-verse">"Cita o promesa bíblica directa"</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contraste -->
+    <section class="section contrast-section">
+        <div class="container">
+            <h2 class="section-title">Cambiando la perspectiva</h2>
+            <div class="cards-grid">
+                <div class="card old-way">
+                    <span class="tag">Lo que muchos nos dijeron</span>
+                    <h3>Obligación y juicio</h3>
+                    <p>Que tenías que ser perfecto, aparentar quién ora más o seguir normas estrictas por miedo al castigo.</p>
+                </div>
+                <div class="card new-way">
+                    <span class="tag">La realidad</span>
+                    <h3>Paciencia y refugio</h3>
+                    <p>Jesús jamás apartó ni obligó a nadie; escuchaba con paciencia y daba seguridad. Dios te espera como un amigo y un Padre con los brazos abiertos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Jesús en lo Cotidiano -->
+    <section class="section stories-section">
+        <div class="container">
+            <h2 class="section-title">Jesús en lo cotidiano</h2>
+            <p class="section-subtitle">Cuando estuvo en la tierra, rompió con la frialdad de las normas para estar cerca de las personas.</p>
+            
+            <div class="stories-grid">
+                <div class="story-card">
+                    <div class="story-icon">✦</div>
+                    <h3>Paciencia con los que se acercan</h3>
+                    <p>Cuando los niños corrían hacia Él, los adultos quisieron apartarlos pensando que molestaban. Jesús los detuvo a todos, los recibió con una sonrisa y mostró que el Reino se trata de sencillez, confianza y cero complicaciones.</p>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-icon">✦</div>
+                    <h3>Compartir la mesa sin juzgar</h3>
+                    <p>No buscó a los que se creían perfectos o sabios. Se sentó a comer y conversar con la gente común, con los señalados por la sociedad y con los que cometían errores. Nunca les puso condiciones para escucharlos.</p>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-icon">✦</div>
+                    <h3>Espacio seguro para tus dudas</h3>
+                    <p>Cuando sus amigos tuvieron miedo, dudas o fallaron, jamás los rechazó ni los humilló. Estuvo ahí para dar calma en medio de la tormenta y recordarles que su amor no depende de qué tan fuerte te sientas hoy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Respuestas a Preguntas Difíciles -->
+    <section class="section hard-questions-section">
+        <div class="container">
+            <h2 class="section-title">Preguntas difíciles sin rodeos</h2>
+            <p class="section-subtitle">Los temas complejos que suelen esquivarse en los discursos tradicionales.</p>
+
+            <div class="hard-questions-grid">
+                <div class="hard-card">
+                    <span class="hard-tag">El dolor</span>
+                    <h3>Si Dios es amor, ¿por qué hay tanto sufrimiento?</h3>
+                    <p>Dios no creó el dolor humano ni lo disfruta como castigo; el dolor en el mundo nace muchas veces de las decisiones humanas y de vivir en una realidad rota. Lo central no es una respuesta teórica, sino que Dios no nos mira indiferente desde lejos: Jesús lloró frente a la pérdida y prometió estar en medio de la herida para sostenernos, no para juzgarnos.</p>
+                </div>
+
+                <div class="hard-card">
+                    <span class="hard-tag">La religión</span>
+                    <h3>¿Por qué hay tanta hipocresía en la gente religiosa?</h3>
+                    <p>Jesús fue el crítico más duro de los religiosos hipócritas de su tiempo. Les llamó "sepulcros blanqueados" porque cuidaban la fachada exterior pero por dentro estaban llenos de frialdad y juicio. La hipocresía humana no define quién es tu Padre; Dios no es la religión estricta que algunos hombres armaron.</p>
+                </div>
+
+                <div class="hard-card">
+                    <span class="hard-tag">La libertad</span>
+                    <h3>¿Dios me obliga a seguirlo o me castiga si tomo otro camino?</h3>
+                    <p>El amor verdadero exige libertad absoluta; si alguien te obligara a quererlo, no sería amor, sería manipulación. Dios respeta tanto tus decisiones que te deja buscar tu propio rumbo, pero siempre mantiene la puerta abierta para cuando decidas regresar por voluntad propia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Respuestas Rápidas sobre la Vida Real -->
+    <section class="section topic-answers-section">
+        <div class="container">
+            <h2 class="section-title">¿Qué dice Jesús sobre la vida real?</h2>
+            <p class="section-subtitle">Elige un tema y mira cómo lo abordaba sin rodeos ni discursos religiosos.</p>
+
+            <div class="topic-tabs">
+                <button class="btn-topic active" data-topic="soledad">La Soledad</button>
+                <button class="btn-topic" data-topic="fracaso">El Fracaso</button>
+                <button class="btn-topic" data-topic="presion">La Presión Social</button>
+                <button class="btn-topic" data-topic="dolor">El Dolor y la Pérdida</button>
+            </div>
+
+            <div class="topic-content-box">
+                <div class="topic-quote-mark">“</div>
+                <h3 id="topic-title">Nunca estás verdaderamente solo</h3>
+                <p id="topic-text">Jesús mismo sintió el abandono de sus amigos más cercanos en su noche más oscura. Por eso no te mira desde lejos; entiende lo que pesa una habitación en silencio. Su promesa no es quitarte de golpe del mundo, sino caminar a tu lado en el silencio.</p>
+                <div id="topic-hint" class="topic-hint">Enfoque: Cercanía en medio del aislamiento.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Selector de Estado de Ánimo -->
+    <section id="animo" class="section mood-section">
+        <div class="container">
+            <h2 class="section-title">¿Cómo llegas hoy?</h2>
+            <p class="section-subtitle">No necesitas arreglarte antes de hablar con Él. Elige cómo te sientes ahora mismo:</p>
+
+            <div class="mood-buttons">
+                <button class="btn-mood active" data-mood="ansiedad">Con cansancio o ansiedad</button>
+                <button class="btn-mood" data-mood="culpa">Siento que he fallado</button>
+                <button class="btn-mood" data-mood="dudas">Tengo dudas o vacío</button>
+                <button class="btn-mood" data-mood="agradecido">Con ganas de agradecer</button>
+            </div>
+
+            <div class="mood-card">
+                <h3 id="mood-title">Descansa, no tienes que sostenerlo todo solo.</h3>
+                <p id="mood-desc">Dios no te pide que seas fuerte las 24 horas del día. Cuando estés abrumado, simplemente dile: "No puedo con esto hoy, acompáñame". Su presencia no es una carga más; es un lugar donde soltar la mochila.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Iglesia Virtual en Roblox -->
+    <section id="comunidad-roblox" class="section roblox-section">
+        <div class="container">
+            <div class="roblox-badge-wrapper">
+                <span class="roblox-badge">Comunidad & Espacio Juvenil</span>
+            </div>
+            <h2 class="section-title">Una comunidad para empezar a tu propio ritmo</h2>
+            <p class="section-subtitle">Un puente cercano para conocer a otros jóvenes, compartir experiencias y dar tus primeros pasos con tu Padre sin que nadie te juzgue ni te obligue.</p>
+
+            <div class="roblox-card-container">
+                <div class="roblox-image-wrapper">
+                    <img src="iglesia-roblox.jpg" alt="Iglesia Vida Nueva en Roblox - Cristo Te Ama" class="roblox-cover-img" onerror="this.src='https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80'">
+                </div>
+
+                <div class="roblox-details">
+                    <div class="roblox-header-info">
+                        <span class="platform-tag">Espacio en Roblox</span>
+                        <h3>Iglesia Vida Nueva (Roblox)</h3>
+                        <p class="roblox-lead">No es para señalarte con el dedo; es un lugar donde puedes entrar, sentarte en silencio si quieres, escuchar música, compartir tus batallas y recordar que <strong>tu Padre te está esperando con los brazos abiertos</strong>. No pierdes nada con entrar: es un espacio para empezar a tener a alguien en tu vida y no volver a sentirte solo jamás.</p>
+                    </div>
+
+                    <div class="roblox-schedule-box">
+                        <h4>Días y Horarios de Encuentro</h4>
+                        <div class="schedule-grid">
+                            <div class="schedule-item">
+                                <span class="day">Lunes</span>
+                                <span class="event">Culto Juvenil</span>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="day">Martes</span>
+                                <span class="event">Culto General</span>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="day">Viernes</span>
+                                <span class="event">Culto General</span>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="day">Domingo</span>
+                                <span class="event">Culto General</span>
+                            </div>
+                        </div>
+                        <div class="schedule-time-note">
+                            <strong>🕒 7:00 p. m. (Hora de Colombia)</strong>
+                            <p>Si eres de otro país, solo revisa la diferencia horaria con Colombia (ej. en Chile/Argentina suele ser 2 horas más según la temporada).</p>
+                        </div>
+                    </div>
+
+                    <div class="roblox-links-group">
+                        <a href="https://www.roblox.com" target="_blank" class="btn-roblox-link">
+                            <span class="link-icon">🎮</span> Entrar en Roblox
+                        </a>
+                        <a href="https://discord.com" target="_blank" class="btn-roblox-link discord">
+                            <span class="link-icon">💬</span> Discord Comunidad
+                        </a>
+                        <a href="https://www.youtube.com" target="_blank" class="btn-roblox-link youtube">
+                            <span class="link-icon">▶</span> YouTube Oficial
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dinámica Interactiva: Reflexión Diaria -->
+    <section id="reflexion" class="section interactive-section">
+        <div class="container">
+            <h2 class="section-title">Un momento con tu Padre</h2>
+            <p class="section-subtitle">Toma un respiro. Sin rezos de memoria ni discursos complicados; solo una verdad para hoy.</p>
+            
+            <div class="reflection-box">
+                <blockquote id="quote-text">"El amor y la relación no se imponen. Dios camina contigo en lo cotidiano, no solo cuando las cosas van bien."</blockquote>
+                <div class="reflection-actions">
+                    <button id="btn-quote" class="btn-secondary">Generar otra reflexión</button>
+                    <button id="btn-copy" class="btn-secondary">Copiar frase</button>
+                    <a id="btn-whatsapp" href="#" target="_blank" class="btn-whatsapp">Compartir en WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cierre e Invitación -->
+    <footer class="footer">
+        <div class="container">
+            <p>No se trata de religión estricta, sino de encontrar paz en el día a día.</p>
+            <small>© 2026 Una Relación Real</small>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
