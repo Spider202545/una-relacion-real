@@ -34,7 +34,7 @@
 
     <!-- Widget Flotante de Ambiente -->
     <div class="ambient-widget">
-        <button id="btn-ambient" class="widget-btn" title="Sonido ambiental para reflexionar">
+        <button id="btn-ambient" class="widget-btn" title="Sonido ambiental para reflexionar" type="button">
             <span id="ambient-icon">♪</span>
             <span id="ambient-label">Música / Calma</span>
         </button>
@@ -92,10 +92,10 @@
                 </div>
 
                 <div class="toolkit-tabs">
-                    <button class="btn-tool-tab active" data-tool="llegar-nuevo">Llegar a un lugar donde no conozco a nadie</button>
-                    <button class="btn-tool-tab" data-tool="romper-hielo">Cómo romper el hielo sin dar cringe</button>
-                    <button class="btn-tool-tab" data-tool="me-ignoraron">Qué hacer si me ignoran o son cortantes</button>
-                    <button class="btn-tool-tab" data-tool="quedarse-en-blanco">Me quedo en blanco y hay silencio</button>
+                    <button type="button" class="btn-tool-tab active" data-tool="llegar-nuevo">Llegar a un lugar donde no conozco a nadie</button>
+                    <button type="button" class="btn-tool-tab" data-tool="romper-hielo">Cómo romper el hielo sin dar cringe</button>
+                    <button type="button" class="btn-tool-tab" data-tool="me-ignoraron">Qué hacer si me ignoran o son cortantes</button>
+                    <button type="button" class="btn-tool-tab" data-tool="quedarse-en-blanco">Me quedo en blanco y hay silencio</button>
                 </div>
 
                 <div class="toolkit-display-box">
@@ -163,11 +163,11 @@
                     <input type="text" id="dilemma-search-input" placeholder="Busca por tema (ej. 'videojuegos', 'alcohol', 'no encajo', 'pensamientos intrusivos')...">
                 </div>
                 <div class="dilemmas-quick-categories">
-                    <button class="dilemma-cat-btn active" data-cat="todos">Todos</button>
-                    <button class="dilemma-cat-btn" data-cat="musica-juegos">Música & Videojuegos</button>
-                    <button class="dilemma-cat-btn" data-cat="presion-social">Presión Social & Amistades</button>
-                    <button class="dilemma-cat-btn" data-cat="mente-dudas">Mente & Dudas</button>
-                    <button class="dilemma-cat-btn" data-cat="iglesia-religion">Iglesia & Religiosidad</button>
+                    <button type="button" class="dilemma-cat-btn active" data-cat="todos">Todos</button>
+                    <button type="button" class="dilemma-cat-btn" data-cat="musica-juegos">Música & Videojuegos</button>
+                    <button type="button" class="dilemma-cat-btn" data-cat="presion-social">Presión Social & Amistades</button>
+                    <button type="button" class="dilemma-cat-btn" data-cat="mente-dudas">Mente & Dudas</button>
+                    <button type="button" class="dilemma-cat-btn" data-cat="iglesia-religion">Iglesia & Religiosidad</button>
                 </div>
             </div>
 
@@ -212,8 +212,8 @@
                         </div>
                     </div>
                     <div class="audio-controls">
-                        <button id="btn-audio-play" class="btn-audio-action play">▶ Escuchar capítulo</button>
-                        <button id="btn-audio-stop" class="btn-audio-action stop" style="display: none;">⏹ Detener</button>
+                        <button type="button" id="btn-audio-play" class="btn-audio-action play">▶ Escuchar capítulo</button>
+                        <button type="button" id="btn-audio-stop" class="btn-audio-action stop" style="display: none;">⏹ Detener</button>
                     </div>
                 </div>
             </div>
@@ -275,7 +275,7 @@
                         </div>
                         <div class="topbar-actions">
                             <span class="filter-tag-pill">Filtro ###### Activo</span>
-                            <button id="btn-logout-chat" class="btn-text-muted" title="Cambiar apodo o salir">Cambiar apodo</button>
+                            <button type="button" id="btn-logout-chat" class="btn-text-muted" title="Cambiar apodo o salir">Cambiar apodo</button>
                         </div>
                     </div>
 
@@ -383,12 +383,12 @@
 
             <div class="wall-filters">
                 <span class="filter-title">Filtrar por:</span>
-                <button class="filter-btn active" data-filter="todos">Todos</button>
-                <button class="filter-btn" data-filter="Batallas con la pureza">Pureza y Culpa</button>
-                <button class="filter-btn" data-filter="Desahogo profundo">Cansancio</button>
-                <button class="filter-btn" data-filter="En medio del dolor">Dolor</button>
-                <button class="filter-btn" data-filter="Dudas y batallas">Dudas</button>
-                <button class="filter-btn" data-filter="Agradecimiento sincero">Agradecimientos</button>
+                <button type="button" class="filter-btn active" data-filter="todos">Todos</button>
+                <button type="button" class="filter-btn" data-filter="Batallas con la pureza">Pureza y Culpa</button>
+                <button type="button" class="filter-btn" data-filter="Desahogo profundo">Cansancio</button>
+                <button type="button" class="filter-btn" data-filter="En medio del dolor">Dolor</button>
+                <button type="button" class="filter-btn" data-filter="Dudas y batallas">Dudas</button>
+                <button type="button" class="filter-btn" data-filter="Agradecimiento sincero">Agradecimientos</button>
             </div>
 
             <div id="testimonies-feed" class="testimonies-feed-grid"></div>
@@ -405,18 +405,18 @@
             <p class="section-subtitle">A veces la mente se bloquea y no sabemos qué decir. Toca una situación real y haz tuya esta conversación con tu Padre.</p>
 
             <div class="prayers-selector-grid">
-                <button class="prayer-btn active" data-prayer="insomnio">🌙 Insomnio a las 3:00 AM</button>
-                <button class="prayer-btn" data-prayer="familia">🏠 Peleas o tensión en casa</button>
-                <button class="prayer-btn" data-prayer="examen">📚 Pánico por examen o futuro</button>
-                <button class="prayer-btn" data-prayer="silencio">🌫️ Cuando sientes a Dios en silencio</button>
-                <button class="prayer-btn" data-prayer="soledad">🌧️ Soledad profunda en fin de semana</button>
-                <button class="prayer-btn" data-prayer="rabia">⚡ Rabia o frustración con la vida</button>
+                <button type="button" class="prayer-btn active" data-prayer="insomnio">🌙 Insomnio a las 3:00 AM</button>
+                <button type="button" class="prayer-btn" data-prayer="familia">🏠 Peleas o tensión en casa</button>
+                <button type="button" class="prayer-btn" data-prayer="examen">📚 Pánico por examen o futuro</button>
+                <button type="button" class="prayer-btn" data-prayer="silencio">🌫️ Cuando sientes a Dios en silencio</button>
+                <button type="button" class="prayer-btn" data-prayer="soledad">🌧️ Soledad profunda en fin de semana</button>
+                <button type="button" class="prayer-btn" data-prayer="rabia">⚡ Rabia o frustración con la vida</button>
             </div>
 
             <div class="prayer-display-card">
                 <div class="prayer-card-header">
                     <span id="prayer-scenario-tag" class="prayer-scenario-tag">Situación: Insomnio y mente saturada</span>
-                    <button id="btn-copy-prayer" class="btn-copy-sm">Copiar oración</button>
+                    <button type="button" id="btn-copy-prayer" class="btn-copy-sm">Copiar oración</button>
                 </div>
                 
                 <blockquote id="prayer-text" class="prayer-quote">
@@ -467,8 +467,8 @@
                     <h3>¿Estás a punto de caer o acabas de fallar ahora mismo?</h3>
                     <p>No huyas ni te encierres en la oscuridad. Toca el botón para leer lo que tu Padre te dice en este segundo exacto:</p>
                     <div class="sos-actions">
-                        <button id="btn-sos-temptation" class="btn-sos">Siento el impulso ahora mismo</button>
-                        <button id="btn-sos-relapse" class="btn-sos secondary">Acabo de caer y siento culpa</button>
+                        <button type="button" id="btn-sos-temptation" class="btn-sos">Siento el impulso ahora mismo</button>
+                        <button type="button" id="btn-sos-relapse" class="btn-sos secondary">Acabo de caer y siento culpa</button>
                     </div>
                 </div>
                 <div id="sos-message-display" class="sos-message" style="display: none;">
@@ -489,16 +489,16 @@
             <div class="comfort-search-box">
                 <div class="search-input-wrapper">
                     <input type="text" id="comfort-input" placeholder="Escribe aquí (ej. 'miedo al futuro', 'siento que no avanzo', 'culpa', 'soledad')...">
-                    <button id="btn-search-comfort" class="btn-primary">Buscar consuelo</button>
+                    <button type="button" id="btn-search-comfort" class="btn-primary">Buscar consuelo</button>
                 </div>
 
                 <div class="quick-tags">
                     <span>Sugerencias rápidas:</span>
-                    <button class="tag-quick-btn" data-query="no avanzo">Siento que no avanzo</button>
-                    <button class="tag-quick-btn" data-query="miedo al futuro">Miedo al futuro</button>
-                    <button class="tag-quick-btn" data-query="culpa">Culpa por fallar</button>
-                    <button class="tag-quick-btn" data-query="soledad">Me siento solo</button>
-                    <button class="tag-quick-btn" data-query="cansancio">Cansancio de todo</button>
+                    <button type="button" class="tag-quick-btn" data-query="no avanzo">Siento que no avanzo</button>
+                    <button type="button" class="tag-quick-btn" data-query="miedo al futuro">Miedo al futuro</button>
+                    <button type="button" class="tag-quick-btn" data-query="culpa">Culpa por fallar</button>
+                    <button type="button" class="tag-quick-btn" data-query="soledad">Me siento solo</button>
+                    <button type="button" class="tag-quick-btn" data-query="cansancio">Cansancio de todo</button>
                 </div>
             </div>
 
@@ -598,10 +598,10 @@
             <p class="section-subtitle">Elige un tema y mira cómo lo abordaba sin rodeos ni discursos religiosos.</p>
 
             <div class="topic-tabs">
-                <button class="btn-topic active" data-topic="soledad">La Soledad</button>
-                <button class="btn-topic" data-topic="fracaso">El Fracaso</button>
-                <button class="btn-topic" data-topic="presion">La Presión Social</button>
-                <button class="btn-topic" data-topic="dolor">El Dolor y la Pérdida</button>
+                <button type="button" class="btn-topic active" data-topic="soledad">La Soledad</button>
+                <button type="button" class="btn-topic" data-topic="fracaso">El Fracaso</button>
+                <button type="button" class="btn-topic" data-topic="presion">La Presión Social</button>
+                <button type="button" class="btn-topic" data-topic="dolor">El Dolor y la Pérdida</button>
             </div>
 
             <div class="topic-content-box">
@@ -620,10 +620,10 @@
             <p class="section-subtitle">No necesitas arreglarte antes de hablar con Él. Elige cómo te sientes ahora mismo:</p>
 
             <div class="mood-buttons">
-                <button class="btn-mood active" data-mood="ansiedad">Con cansancio o ansiedad</button>
-                <button class="btn-mood" data-mood="culpa">Siento que he fallado</button>
-                <button class="btn-mood" data-mood="dudas">Tengo dudas o vacío</button>
-                <button class="btn-mood" data-mood="agradecido">Con ganas de agradecer</button>
+                <button type="button" class="btn-mood active" data-mood="ansiedad">Con cansancio o ansiedad</button>
+                <button type="button" class="btn-mood" data-mood="culpa">Siento que he fallado</button>
+                <button type="button" class="btn-mood" data-mood="dudas">Tengo dudas o vacío</button>
+                <button type="button" class="btn-mood" data-mood="agradecido">Con ganas de agradecer</button>
             </div>
 
             <div class="mood-card">
@@ -644,7 +644,7 @@
 
             <div class="roblox-card-container">
                 <div class="roblox-image-wrapper">
-                    <img src="iglesia-roblox.jpg" alt="Iglesia Vida Nueva en Roblox - Cristo Te Ama" class="roblox-cover-img" onerror="this.src='https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80'">
+                    <img src="photo-1511671782779-c97d3d27a1d4.avif" alt="Iglesia en Roblox" class="roblox-cover-img" onerror="this.src='https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80'">
                 </div>
 
                 <div class="roblox-details">
@@ -705,8 +705,8 @@
             <div class="reflection-box">
                 <blockquote id="quote-text">"El amor y la relación no se imponen. Dios camina contigo en lo cotidiano, no solo cuando las cosas van bien."</blockquote>
                 <div class="reflection-actions">
-                    <button id="btn-quote" class="btn-secondary">Generar otra reflexión</button>
-                    <button id="btn-copy" class="btn-secondary">Copiar frase</button>
+                    <button type="button" id="btn-quote" class="btn-secondary">Generar otra reflexión</button>
+                    <button type="button" id="btn-copy" class="btn-secondary">Copiar frase</button>
                     <a id="btn-whatsapp" href="#" target="_blank" class="btn-whatsapp">Compartir en WhatsApp</a>
                 </div>
             </div>
@@ -720,10 +720,59 @@
             <small>© 2026 Una Relación Real</small>
         </div>
     </footer>
-<script>
+
+    <!-- MOTOR JAVASCRIPT COMPLETO E INTEGRADO -->
+    <script>
     document.addEventListener("DOMContentLoaded", () => {
 
+        // ==========================================================================
+        // 0. NAVEGACIÓN Y UTILIDADES
+        // ==========================================================================
+        const navPills = document.querySelectorAll('.nav-pill');
+        navPills.forEach(pill => {
+            pill.addEventListener('click', function() {
+                navPills.forEach(p => p.classList.remove('active-pill'));
+                this.classList.add('active-pill');
+            });
+        });
+
+        const bannedWords = [
+            "puta", "puto", "mierda", "conchetumadre", "ctm", "culiao", "weon", "wn",
+            "pendejo", "bastardo", "maricon", "verga", "pito", "polla", "pene", "vagina",
+            "sexo", "porno", "porn", "xxx", "tetas", "culo", "chucha", "zorra", "malparido",
+            "gonorrea", "chupala", "mamada", "prostituta", "perra", "idiota", "estupido"
+        ];
+
+        function containsInappropriateContent(text) {
+            const lower = text.toLowerCase();
+            return bannedWords.some(word => {
+                const regex = new RegExp(`\\b${word}\\b`, 'i');
+                return regex.test(lower) || lower.includes(word);
+            });
+        }
+
+        function applyRobloxFilter(text) {
+            let filtered = text;
+            bannedWords.forEach(word => {
+                const regex = new RegExp(word, 'gi');
+                filtered = filtered.replace(regex, "######");
+            });
+            return filtered;
+        }
+
+        function escapeHtml(string) {
+            if (!string) return "";
+            return string
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+        }
+
+        // ==========================================================================
         // 1. TOOLKIT INTROVERTIDOS
+        // ==========================================================================
         const introvertsToolkitData = {
             "llegar-nuevo": {
                 title: "Llegar a un lugar donde no conozco a nadie",
@@ -775,7 +824,105 @@
             });
         }
 
-        // 2. BIBLIA COMPLETA (CARGA GARANTIZADA)
+        // ==========================================================================
+        // 2. PETICIONES DE ORACIÓN INTERACTIVAS
+        // ==========================================================================
+        const initialPrayerRequests = [
+            {
+                id: 1,
+                author: "Camila, 18 años",
+                topic: "Paz para mi mente",
+                details: "Tengo semanas sintiéndome abrumada con mis estudios y el miedo a no ser suficiente. Porfa oren para que pueda dormir con tranquilidad.",
+                prayingCount: 28,
+                time: "Hace 40 min"
+            },
+            {
+                id: 2,
+                author: "Anónimo",
+                topic: "Sanidad en mi familia",
+                details: "Mis papás están pasando por una crisis pesada y en mi casa solo hay gritos y tensión. Necesito fuerzas para no perder la calma.",
+                prayingCount: 42,
+                time: "Hace 2 horas"
+            }
+        ];
+
+        let prayerRequestsList = JSON.parse(localStorage.getItem('prayer_requests_data')) || initialPrayerRequests;
+        const prayerReqForm = document.getElementById('prayer-request-form');
+        const reqAuthorInput = document.getElementById('req-author-input');
+        const reqTopicInput = document.getElementById('req-topic-input');
+        const reqDetailsInput = document.getElementById('req-details-input');
+        const prayerRequestsFeed = document.getElementById('prayer-requests-feed');
+
+        window.addPrayerSupport = function(id) {
+            const item = prayerRequestsList.find(r => r.id === id);
+            if (item) {
+                item.prayingCount++;
+                localStorage.setItem('prayer_requests_data', JSON.stringify(prayerRequestsList));
+                renderPrayerRequests();
+            }
+        };
+
+        function renderPrayerRequests() {
+            if (!prayerRequestsFeed) return;
+            prayerRequestsFeed.innerHTML = '';
+            prayerRequestsList.forEach(req => {
+                const card = document.createElement('div');
+                card.className = 'prayer-req-card';
+                card.innerHTML = `
+                    <div>
+                        <div class="req-header">
+                            <span class="req-topic">${escapeHtml(applyRobloxFilter(req.topic))}</span>
+                            <span class="req-time">${req.time}</span>
+                        </div>
+                        <p class="req-body-text">"${escapeHtml(applyRobloxFilter(req.details))}"</p>
+                    </div>
+                    <div class="req-footer">
+                        <span class="req-author-tag">— ${escapeHtml(applyRobloxFilter(req.author))}</span>
+                        <button type="button" class="btn-pray-counter" onclick="addPrayerSupport(${req.id})">
+                            <span>🙏 Orando por ti</span> 
+                            <strong>${req.prayingCount}</strong>
+                        </button>
+                    </div>
+                `;
+                prayerRequestsFeed.appendChild(card);
+            });
+        }
+
+        if (prayerReqForm) {
+            prayerReqForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const author = reqAuthorInput.value.trim();
+                const topic = reqTopicInput.value.trim();
+                const details = reqDetailsInput.value.trim();
+
+                if (!author || !topic || !details) return;
+                if (containsInappropriateContent(author)) {
+                    alert("Por favor utiliza un apodo respetuoso para publicar.");
+                    return;
+                }
+
+                prayerRequestsList.unshift({
+                    id: Date.now(),
+                    author: author,
+                    topic: topic,
+                    details: details,
+                    prayingCount: 1,
+                    time: "Recién publicado"
+                });
+
+                localStorage.setItem('prayer_requests_data', JSON.stringify(prayerRequestsList));
+                renderPrayerRequests();
+
+                reqAuthorInput.value = '';
+                reqTopicInput.value = '';
+                reqDetailsInput.value = '';
+            });
+        }
+        renderPrayerRequests();
+
+        // ==========================================================================
+        // 3. BIBLIA COMPLETA (66 Libros & Audio)
+        // ==========================================================================
         const bibleMetadata = {
             antiguo: [
                 { key: "genesis", name: "Génesis", chapters: 50, teaching: "Dios inicia la vida y muestra su paciencia con una humanidad rota.", takeaway: "Tu historia comienza en su corazón, no en el azar." },
@@ -797,12 +944,17 @@
         const bibleBookSelect = document.getElementById('bible-book-select');
         const bibleChapterSelect = document.getElementById('bible-chapter-select');
         const readingTitleDisplay = document.getElementById('reading-title-display');
+        const readingTimeDisplay = document.getElementById('reading-reading-time');
         const versesContainer = document.getElementById('reading-verses-container');
         const readingTeachingText = document.getElementById('reading-teaching-text');
         const readingTakeawayText = document.getElementById('reading-takeaway-text');
         const audioBookTitle = document.getElementById('audio-book-title');
+        const btnAudioPlay = document.getElementById('btn-audio-play');
+        const btnAudioStop = document.getElementById('btn-audio-stop');
 
-        function loadBooks() {
+        let isSpeaking = false;
+
+        function loadBooks(selectedBookKey = null) {
             if (!bibleTestamentSelect || !bibleBookSelect) return;
             const testament = bibleTestamentSelect.value;
             const books = bibleMetadata[testament] || [];
@@ -814,6 +966,10 @@
                 opt.textContent = b.name;
                 bibleBookSelect.appendChild(opt);
             });
+
+            if (selectedBookKey) {
+                bibleBookSelect.value = selectedBookKey;
+            }
             loadChapters();
         }
 
@@ -822,7 +978,7 @@
             const testament = bibleTestamentSelect.value;
             const bookKey = bibleBookSelect.value;
             const book = (bibleMetadata[testament] || []).find(b => b.key === bookKey);
-            
+
             bibleChapterSelect.innerHTML = '';
             if (!book) return;
 
@@ -851,46 +1007,451 @@
 
             if (versesContainer) {
                 versesContainer.innerHTML = `
-                    <p class="verse-block"><span class="verse-num">1</span> Este es el pasaje de ${book.name} ${chapterNum}.</p>
+                    <p class="verse-block"><span class="verse-num">1</span> Este es el pasaje del libro de ${book.name}, capítulo ${chapterNum}.</p>
                     <p class="verse-block"><span class="verse-num">2</span> ${book.teaching}</p>
                     <p class="verse-block"><span class="verse-num">3</span> ${book.takeaway}</p>
+                    <p class="verse-block"><span class="verse-num">4</span> Camina hoy en confianza: el amor y la paciencia de tu Padre están contigo.</p>
                 `;
             }
+            if (readingTimeDisplay) readingTimeDisplay.textContent = "⏱ 2 min de lectura";
         }
 
         if (bibleTestamentSelect && bibleBookSelect && bibleChapterSelect) {
-            bibleTestamentSelect.addEventListener('change', loadBooks);
-            bibleBookSelect.addEventListener('change', loadChapters);
+            bibleTestamentSelect.addEventListener('change', () => loadBooks());
+            bibleBookSelect.addEventListener('change', () => loadChapters());
             bibleChapterSelect.addEventListener('change', fetchChapter);
-            loadBooks();
+            loadBooks("marcos");
         }
 
-        // 3. CHAT EN VIVO (EVITA LA RECARGA DE PÁGINA)
-        const chatLoginForm = document.getElementById('chat-login-form');
+        if (btnAudioPlay) {
+            btnAudioPlay.addEventListener('click', () => {
+                if (!('speechSynthesis' in window)) {
+                    alert("Tu navegador no soporta síntesis de voz.");
+                    return;
+                }
+                if (!isSpeaking) {
+                    window.speechSynthesis.cancel();
+                    const text = `${readingTitleDisplay.textContent}. ${readingTeachingText.textContent}. ${readingTakeawayText.textContent}`;
+                    const utterance = new SpeechSynthesisUtterance(text);
+                    utterance.lang = 'es-ES';
+                    utterance.rate = 0.95;
+                    utterance.onend = () => {
+                        isSpeaking = false;
+                        btnAudioPlay.textContent = "▶ Escuchar capítulo";
+                        if (btnAudioStop) btnAudioStop.style.display = "none";
+                    };
+                    window.speechSynthesis.speak(utterance);
+                    isSpeaking = true;
+                    btnAudioPlay.textContent = "⏸ Pausar";
+                    if (btnAudioStop) btnAudioStop.style.display = "inline-block";
+                } else {
+                    if (window.speechSynthesis.paused) {
+                        window.speechSynthesis.resume();
+                        btnAudioPlay.textContent = "⏸ Pausar";
+                    } else {
+                        window.speechSynthesis.pause();
+                        btnAudioPlay.textContent = "▶ Reanudar";
+                    }
+                }
+            });
+        }
+
+        if (btnAudioStop) {
+            btnAudioStop.addEventListener('click', () => {
+                if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+                isSpeaking = false;
+                if (btnAudioPlay) btnAudioPlay.textContent = "▶ Escuchar capítulo";
+                btnAudioStop.style.display = "none";
+            });
+        }
+
+        // ==========================================================================
+        // 4. CHAT COMUNITARIO EN VIVO (ENVÍO ESTILO DISCORD)
+        // ==========================================================================
+        let currentChatUser = localStorage.getItem('chat_current_user') || null;
+
+        const defaultChatMessages = [
+            { id: 1, user: "Matías (Chile)", time: "14:10", text: "Hoy rendí una prueba que me tenía sin dormir hace días. Me acordé de que Dios camina en lo cotidiano y respiré hondo. ¡Fuerza a todos!" },
+            { id: 2, user: "Cami (Colombia)", time: "14:22", text: "Me da mucha paz este rincón donde no te juzgan por tus dudas ni te obligan a nada." },
+            { id: 3, user: "Lucas", time: "14:35", text: "Llevo 4 días limpio y dando la pelea. Saber que el Padre no me mira con asco me dio fuerzas para levantarme de nuevo." }
+        ];
+
+        let chatMessagesList = JSON.parse(localStorage.getItem('community_chat_history')) || defaultChatMessages;
+
         const chatLoginScreen = document.getElementById('chat-login-screen');
         const chatActiveScreen = document.getElementById('chat-active-screen');
+        const chatLoginForm = document.getElementById('chat-login-form');
         const chatUsernameInput = document.getElementById('chat-username-input');
         const currentUserDisplay = document.getElementById('current-user-display');
         const btnLogoutChat = document.getElementById('btn-logout-chat');
+        const chatSendForm = document.getElementById('chat-send-form');
+        const chatMessageInput = document.getElementById('chat-message-input');
+        const chatMessagesContainer = document.getElementById('chat-messages-container');
+
+        function renderChatMessages() {
+            if (!chatMessagesContainer) return;
+            chatMessagesContainer.innerHTML = '';
+
+            chatMessagesList.forEach(item => {
+                const isMine = item.user === currentChatUser;
+                const bubble = document.createElement('div');
+                bubble.className = `chat-bubble ${isMine ? 'mine' : ''}`;
+                bubble.innerHTML = `
+                    <div class="bubble-header">
+                        <span class="bubble-user">${escapeHtml(item.user)}</span>
+                        <span class="bubble-time">${item.time}</span>
+                    </div>
+                    <p class="bubble-text">${escapeHtml(applyRobloxFilter(item.text))}</p>
+                `;
+                chatMessagesContainer.appendChild(bubble);
+            });
+            chatMessagesContainer.scrollTop = chatMessagesContainer.scrollHeight;
+        }
+
+        function checkChatStatus() {
+            if (!chatLoginScreen || !chatActiveScreen) return;
+            if (currentChatUser) {
+                chatLoginScreen.style.display = 'none';
+                chatActiveScreen.style.display = 'flex';
+                if (currentUserDisplay) currentUserDisplay.textContent = currentChatUser;
+                renderChatMessages();
+            } else {
+                chatLoginScreen.style.display = 'block';
+                chatActiveScreen.style.display = 'none';
+                if (chatUsernameInput) chatUsernameInput.value = '';
+            }
+        }
 
         if (chatLoginForm) {
-            chatLoginForm.addEventListener('submit', function(e) {
-                e.preventDefault(); // Detiene el salto hacia arriba
+            chatLoginForm.addEventListener('submit', (e) => {
+                e.preventDefault();
                 const name = chatUsernameInput.value.trim();
                 if (!name) return;
 
-                chatLoginScreen.style.display = 'none';
-                chatActiveScreen.style.display = 'flex';
-                if (currentUserDisplay) currentUserDisplay.textContent = name;
+                if (containsInappropriateContent(name)) {
+                    alert("Por favor elige un apodo respetuoso.");
+                    chatUsernameInput.value = '';
+                    return;
+                }
+
+                currentChatUser = name;
+                localStorage.setItem('chat_current_user', currentChatUser);
+                checkChatStatus();
             });
         }
 
         if (btnLogoutChat) {
-            btnLogoutChat.addEventListener('click', function(e) {
+            btnLogoutChat.addEventListener('click', (e) => {
                 e.preventDefault();
-                chatActiveScreen.style.display = 'none';
-                chatLoginScreen.style.display = 'block';
-                if (chatUsernameInput) chatUsernameInput.value = '';
+                localStorage.removeItem('chat_current_user');
+                currentChatUser = null;
+                checkChatStatus();
+            });
+        }
+
+        if (chatSendForm) {
+            chatSendForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const rawText = chatMessageInput.value.trim();
+                if (!rawText || !currentChatUser) return;
+
+                const now = new Date();
+                const timeStr = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+                const newMsg = {
+                    id: Date.now(),
+                    user: currentChatUser,
+                    time: timeStr,
+                    text: rawText
+                };
+
+                chatMessagesList.push(newMsg);
+                localStorage.setItem('community_chat_history', JSON.stringify(chatMessagesList));
+
+                renderChatMessages();
+                chatMessageInput.value = '';
+                chatMessageInput.focus();
+            });
+        }
+        checkChatStatus();
+
+        // ==========================================================================
+        // 5. TESTIMONIOS Y HISTORIAS ("NO ESTÁS SOLO")
+        // ==========================================================================
+        const initialStories = [
+            { id: 1, author: "Mateo, 20 años", badge: "De la culpa a la paz", content: "Crecí creyendo que si cometía un error, Dios me tachaba de su lista. Cuando entendí que Él es un Padre que me acompaña en mis caídas, se me quitó un peso enorme." },
+            { id: 2, author: "Sofía, 22 años", badge: "Orar sin libreto", content: "Odiaba rezar con frases repetitivas. Un día hablé con Él como hablaría con alguien sentado al lado mío en mi pieza. Por primera vez sentí paz." }
+        ];
+
+        let storiesList = JSON.parse(localStorage.getItem('community_stories_feed')) || initialStories;
+        const shareStoryForm = document.getElementById('share-story-form');
+        const storyAuthorInput = document.getElementById('story-author-input');
+        const storyBadgeInput = document.getElementById('story-badge-input');
+        const storyContentInput = document.getElementById('story-content-input');
+        const storiesGridFeed = document.getElementById('stories-grid-feed');
+
+        function renderStories() {
+            if (!storiesGridFeed) return;
+            storiesGridFeed.innerHTML = '';
+            storiesList.forEach(story => {
+                const card = document.createElement('div');
+                card.className = 'testimonial-card';
+                card.innerHTML = `
+                    <div>
+                        <div class="testimonial-header">
+                            <span class="testimonial-author">${escapeHtml(applyRobloxFilter(story.author))}</span>
+                            <span class="testimonial-badge">${escapeHtml(applyRobloxFilter(story.badge))}</span>
+                        </div>
+                        <p class="testimonial-body">"${escapeHtml(applyRobloxFilter(story.content))}"</p>
+                    </div>
+                `;
+                storiesGridFeed.appendChild(card);
+            });
+        }
+
+        if (shareStoryForm) {
+            shareStoryForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const author = storyAuthorInput.value.trim();
+                const badge = storyBadgeInput.value.trim();
+                const content = storyContentInput.value.trim();
+
+                if (!author || !badge || !content) return;
+                if (containsInappropriateContent(author)) {
+                    alert("Usa un nombre o apodo respetuoso.");
+                    return;
+                }
+
+                storiesList.unshift({ id: Date.now(), author, badge, content });
+                localStorage.setItem('community_stories_feed', JSON.stringify(storiesList));
+                renderStories();
+
+                storyAuthorInput.value = '';
+                storyBadgeInput.value = '';
+                storyContentInput.value = '';
+            });
+        }
+        renderStories();
+
+        // ==========================================================================
+        // 6. MURO ANÓNIMO Y CARTAS DEL PADRE
+        // ==========================================================================
+        const fatherReplies = {
+            pureza: "Mírame a los ojos: no te tengo asco ni te voy a soltar la mano por esto. Sé perfectamente el vacío y la soledad que sentías; sé que buscabas un anestésico para tu mente. Lávate la cara, respira hondo y vuelve a caminar conmigo hoy. No esperes tres días para hablarme: te estoy esperando ahora mismo con un abrazo.",
+            cansancio: "Sé lo agotado que estás de fingir que puedes con todo. No te pedí que fueras de hierro ni que sostengas el mundo sobre tus hombros. Cierra los ojos, suelta la mochila y descansa. Yo cuido de ti.",
+            dolor: "Vi cada lágrima que cayó cuando nadie te miraba y conozco ese nudo en la garganta. No estás abandonado en este valle; sostendré tu mano hasta que vuelva a salir el sol.",
+            dudas: "Tus preguntas y dudas sobre el futuro no me ofenden ni me alejan. Prefiero mil veces tu duda sincera que una fe fingida por compromiso. Camina paso a paso conmigo."
+        };
+
+        const defaultTestimonies = [
+            { id: 1, tag: "Batallas con la pureza", text: "Acabo de caer de nuevo con el celular en mi pieza. Me da un asco tremendo de mí mismo y siento que Dios se cansó de mí.", time: "Hace 20 min", supportCount: 45, fatherReply: fatherReplies.pureza },
+            { id: 2, tag: "Desahogo profundo", text: "No tengo fuerzas para aparentar que todo está bien. Solo cerré los ojos y le dije a Dios: 'No tengo palabras hoy, solo cansancio'.", time: "Hace 2 horas", supportCount: 19, fatherReply: fatherReplies.cansancio }
+        ];
+
+        let testimoniesList = JSON.parse(localStorage.getItem('global_testimonies_feed')) || defaultTestimonies;
+        const globalWallForm = document.getElementById('global-wall-form');
+        const testimonyInput = document.getElementById('testimony-input');
+        const testimonyTag = document.getElementById('testimony-tag');
+        const testimoniesFeed = document.getElementById('testimonies-feed');
+
+        window.supportTestimony = function(id) {
+            const item = testimoniesList.find(t => t.id === id);
+            if (item) {
+                item.supportCount++;
+                localStorage.setItem('global_testimonies_feed', JSON.stringify(testimoniesList));
+                renderWall();
+            }
+        };
+
+        function renderWall() {
+            if (!testimoniesFeed) return;
+            testimoniesFeed.innerHTML = '';
+            testimoniesList.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'testimony-card-item';
+                card.innerHTML = `
+                    <div class="testimony-meta">
+                        <span class="tag-pill">${item.tag}</span>
+                        <span class="time-stamp">${item.time}</span>
+                    </div>
+                    <div class="testimony-user-side">
+                        <p class="testimony-text">"${escapeHtml(applyRobloxFilter(item.text))}"</p>
+                        <span class="author-ghost">— Desahogo de una Voz Anónima</span>
+                    </div>
+                    <div class="father-reply-box">
+                        <div class="father-reply-header">
+                            <span class="father-icon">🕊️</span>
+                            <span class="father-name">Respuesta de tu Padre para ti:</span>
+                        </div>
+                        <p class="father-reply-text">${escapeHtml(item.fatherReply)}</p>
+                    </div>
+                    <div class="testimony-footer-bar">
+                        <button type="button" class="btn-pray-support" onclick="supportTestimony(${item.id})">
+                            <span>🕊️ Te acompaño en silencio</span> 
+                            <strong>${item.supportCount}</strong>
+                        </button>
+                    </div>
+                `;
+                testimoniesFeed.appendChild(card);
+            });
+        }
+
+        if (globalWallForm) {
+            globalWallForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const text = testimonyInput.value.trim();
+                if (!text) return;
+                const tag = testimonyTag.value;
+
+                let reply = fatherReplies.cansancio;
+                if (tag.includes("pureza")) reply = fatherReplies.pureza;
+                else if (tag.includes("dolor")) reply = fatherReplies.dolor;
+                else if (tag.includes("Dudas")) reply = fatherReplies.dudas;
+
+                testimoniesList.unshift({
+                    id: Date.now(),
+                    tag: tag,
+                    text: text,
+                    time: "Recién publicado",
+                    supportCount: 1,
+                    fatherReply: reply
+                });
+
+                localStorage.setItem('global_testimonies_feed', JSON.stringify(testimoniesList));
+                testimonyInput.value = '';
+                renderWall();
+            });
+        }
+        renderWall();
+
+        // ==========================================================================
+        // 7. ORACIONES REALES & COPIAR
+        // ==========================================================================
+        const realPrayersData = {
+            insomnio: {
+                scenario: "Situación: Insomnio a las 3:00 AM y sobrepensando",
+                text: '"Papá, son las tres de la mañana y mi cabeza sigue dando vueltas a mil cosas que no puedo resolver ahora. Hoy no vengo a pedirte cosas con elocuencia; solo vengo a decirte que estoy cansado. Toma mis pendientes, mis dudas de mañana y el miedo a fallar. Acompáñame en esta pieza en silencio y dame la tranquilidad para cerrar los ojos sabiendo que tú estás despierto cuidando de mí."',
+                whisper: 'Lo que tu Padre te responde: "Suelta la guardia, hijo. El mundo sigue girando bajo mi cuidado; tú solo descansa hoy."'
+            },
+            familia: {
+                scenario: "Situación: Conflictos o tensión en casa",
+                text: '"Papá, qué difícil se me hace estar en mi casa a veces. Pon un freno en mi boca para no responder con odio y cuida mi corazón para que no se vuelva frío. Si no puedo cambiar a mi familia hoy, al menos sé tú mi refugio seguro."',
+                whisper: 'Lo que tu Padre te responde: "Sé lo que duele tu hogar terrenal. Recuerda que siempre tienes un lugar de paz en mis brazos."'
+            },
+            examen: {
+                scenario: "Situación: Pánico por examen o futuro",
+                text: '"Papá, tengo el pecho apretado por lo que viene. Recuérdame que una nota o el veredicto de otros no define quién soy ni destruye mi futuro. Dame claridad mental y acompáñame en cada minuto."',
+                whisper: 'Lo que tu Padre te responde: "Haz lo mejor que puedas y déjame el resto a mí."'
+            }
+        };
+
+        const prayerButtons = document.querySelectorAll('.prayer-btn');
+        const prayerScenarioTag = document.getElementById('prayer-scenario-tag');
+        const prayerText = document.getElementById('prayer-text');
+        const prayerFatherWhisper = document.getElementById('prayer-father-whisper');
+        const btnCopyPrayer = document.getElementById('btn-copy-prayer');
+
+        prayerButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                prayerButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const key = btn.getAttribute('data-prayer');
+                const data = realPrayersData[key] || realPrayersData.insomnio;
+
+                if (prayerScenarioTag) prayerScenarioTag.textContent = data.scenario;
+                if (prayerText) prayerText.textContent = data.text;
+                if (prayerFatherWhisper) prayerFatherWhisper.textContent = data.whisper;
+            });
+        });
+
+        if (btnCopyPrayer && prayerText) {
+            btnCopyPrayer.addEventListener('click', () => {
+                navigator.clipboard.writeText(prayerText.textContent).then(() => {
+                    const orig = btnCopyPrayer.textContent;
+                    btnCopyPrayer.textContent = "¡Copiada!";
+                    setTimeout(() => { btnCopyPrayer.textContent = orig; }, 1500);
+                });
+            });
+        }
+
+        // ==========================================================================
+        // 8. SOS BOTONES (BATALLAS & PUREZA)
+        // ==========================================================================
+        const btnSosTemptation = document.getElementById('btn-sos-temptation');
+        const btnSosRelapse = document.getElementById('btn-sos-relapse');
+        const sosDisplay = document.getElementById('sos-message-display');
+        const sosTitle = document.getElementById('sos-title');
+        const sosText = document.getElementById('sos-text');
+        const sosQuote = document.getElementById('sos-quote');
+
+        function setSosMessage(title, body, quote) {
+            if (!sosDisplay) return;
+            if (sosTitle) sosTitle.textContent = title;
+            if (sosText) sosText.textContent = body;
+            if (sosQuote) sosQuote.textContent = quote;
+            sosDisplay.style.display = 'block';
+        }
+
+        if (btnSosTemptation) {
+            btnSosTemptation.addEventListener('click', () => {
+                setSosMessage(
+                    "Suelta la pantalla, levántate y respira",
+                    "El impulso suele durar entre 10 y 15 minutos en su punto máximo. No intentes debatir acostado en la cama: ponte de pie, toma un vaso con agua o camina al patio. Háblale a Dios con franqueza: 'Acompáñame estos diez minutos'.",
+                    '"Fiel es Dios, que no los dejará ser tentados más de lo que pueden resistir."'
+                );
+            });
+        }
+
+        if (btnSosRelapse) {
+            btnSosRelapse.addEventListener('click', () => {
+                setSosMessage(
+                    "No te escondas; la puerta sigue abierta",
+                    "Acabas de fallar y la cabeza te dice que Dios está harto de ti. Esa voz NO es la de tu Padre. Lávate la cara, respira hondo y dile: 'Papá, caí de nuevo, recíbeme'. Tu valor no disminuyó ni un milímetro.",
+                    '"Siete veces cae el justo, y vuelve a levantarse."'
+                );
+            });
+        }
+
+        // ==========================================================================
+        // 9. SONIDO AMBIENTAL FLOTANTE
+        // ==========================================================================
+        let audioCtx = null;
+        let ambientInterval = null;
+        let isPlayingAmbient = false;
+        const btnAmbient = document.getElementById('btn-ambient');
+        const ambientLabel = document.getElementById('ambient-label');
+        const notes = [261.63, 293.66, 329.63, 392.00, 440.00];
+
+        function playSoftChord() {
+            if (!audioCtx) return;
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.frequency.setValueAtTime(notes[Math.floor(Math.random() * notes.length)], audioCtx.currentTime);
+            gain.gain.setValueAtTime(0, audioCtx.currentTime);
+            gain.gain.linearRampToValueAtTime(0.03, audioCtx.currentTime + 1.2);
+            gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 4.5);
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+            osc.start();
+            osc.stop(audioCtx.currentTime + 4.6);
+        }
+
+        if (btnAmbient) {
+            btnAmbient.addEventListener('click', () => {
+                if (!isPlayingAmbient) {
+                    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                    audioCtx.resume();
+                    playSoftChord();
+                    ambientInterval = setInterval(playSoftChord, 2800);
+                    btnAmbient.classList.add('playing');
+                    if (ambientLabel) ambientLabel.textContent = "Calma activa";
+                    isPlayingAmbient = true;
+                } else {
+                    clearInterval(ambientInterval);
+                    btnAmbient.classList.remove('playing');
+                    if (ambientLabel) ambientLabel.textContent = "Música / Calma";
+                    isPlayingAmbient = false;
+                }
             });
         }
     });
