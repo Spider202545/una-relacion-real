@@ -720,7 +720,180 @@
             <small>© 2026 Una Relación Real</small>
         </div>
     </footer>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
 
-    <script src="script.js"></script>
+        // 1. TOOLKIT INTROVERTIDOS
+        const introvertsToolkitData = {
+            "llegar-nuevo": {
+                title: "Llegar a un lugar donde no conozco a nadie",
+                desc: "No busques al grupo más ruidoso ni intentes ser el centro del salón. Entra con paso tranquilo, respira hondo y busca a alguien que también esté apartado, con un café o mirando el celular. Acércate con una pregunta contextual simple: 'Hola, disculpa, ¿sabes a qué hora arranca esto?' o '¿te molesta si me siento por acá?'.",
+                takeaway: "No tienes que impresionar a nadie; solo tienes que estar presente. El valor ya lo traes puesto desde casa."
+            },
+            "romper-hielo": {
+                title: "Cómo romper el hielo sin sentir vergüenza ajena",
+                desc: "El error común es creer que debes inventar un chiste brillante. El mejor truco de un introvertido es la curiosidad genuina: no hables de ti, haz preguntas abiertas sobre la otra persona: '¿Hace cuánto vienes aquí?' o '¿Cómo conociste este lugar?'. A la gente le apasiona sentirse escuchada.",
+                takeaway: "Un buen oyente es 10 veces más memorable que alguien que solo habla de sí mismo."
+            },
+            "me-ignoraron": {
+                title: "Qué hacer si me ignoran o son cortantes",
+                desc: "Si das un paso y la persona responde seca, sonríe con tranquilidad y di: 'Entiendo, ¡buen día!'. No te des la vuelta creyendo que eres raro o defectuoso. Te acabas de ahorrar meses de energía con alguien que no tenía disposición hoy. Tu paz interior no se negocia por la cortesía de un extraño.",
+                takeaway: "El rechazo es un filtro protector de Dios: te aleja de personas que no saben valorar una presencia sincera."
+            },
+            "quedarse-en-blanco": {
+                title: "Me quedo en blanco y se hace un silencio incómodo",
+                desc: "Los silencios solo son incómodos si tú te desesperas por llenarlos con ruido torpe. Si la conversación se apaga, no pasa nada: respira, toma un trago de agua y di con total naturalidad: 'Qué buena música hay hoy' o simplemente 'Perdón, me quedé pensando en lo que dijiste antes'. La calma demuestra seguridad.",
+                takeaway: "Aprender a habitar el silencio con tranquilidad es señal de madurez y aplomo personal."
+            }
+        };
+
+        const toolTabs = document.querySelectorAll('.btn-tool-tab');
+        const toolTitle = document.getElementById('tool-title');
+        const toolDesc = document.getElementById('tool-desc');
+        const toolTakeaway = document.getElementById('tool-takeaway');
+        const toolDisplayBox = document.querySelector('.toolkit-display-box');
+
+        if (toolTabs && toolDisplayBox) {
+            toolTabs.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    toolTabs.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const key = btn.getAttribute('data-tool');
+                    const data = introvertsToolkitData[key];
+
+                    if (data) {
+                        toolDisplayBox.style.opacity = 0;
+                        setTimeout(() => {
+                            if (toolTitle) toolTitle.textContent = data.title;
+                            if (toolDesc) toolDesc.textContent = data.desc;
+                            if (toolTakeaway) toolTakeaway.textContent = data.takeaway;
+                            toolDisplayBox.style.opacity = 1;
+                        }, 180);
+                    }
+                });
+            });
+        }
+
+        // 2. BIBLIA COMPLETA (CARGA GARANTIZADA)
+        const bibleMetadata = {
+            antiguo: [
+                { key: "genesis", name: "Génesis", chapters: 50, teaching: "Dios inicia la vida y muestra su paciencia con una humanidad rota.", takeaway: "Tu historia comienza en su corazón, no en el azar." },
+                { key: "exodo", name: "Éxodo", chapters: 40, teaching: "Dios rescata de la esclavitud y abre caminos en el desierto.", takeaway: "Él no te deja atrapado en tus prisiones emocionales." },
+                { key: "salmos", name: "Salmos", chapters: 150, teaching: "Poesía honesta: dolor, gratitud, miedo y adoración sin filtros.", takeaway: "Cualquier emoción humana tiene cabida ante el Padre." },
+                { key: "proverbios", name: "Proverbios", chapters: 31, teaching: "Sabiduría práctica para el dinero, amistades y decisiones.", takeaway: "El respeto a Dios es el principio de la verdadera inteligencia." },
+                { key: "isaias", name: "Isaías", chapters: 66, teaching: "La promesa del Mesías que sana las heridas y carga el dolor.", takeaway: "Por sus llagas fuimos nosotros curados." }
+            ],
+            nuevo: [
+                { key: "mateo", name: "Mateo", chapters: 28, teaching: "Jesús como el Rey prometido que viene a servir.", takeaway: "Bienaventurados los que tienen hambre de justicia." },
+                { key: "marcos", name: "Marcos", chapters: 16, teaching: "Acción inmediata: Jesús sanando y amando sin protocolos.", takeaway: "El Hijo vino a servir y dar su vida por muchos." },
+                { key: "lucas", name: "Lucas", chapters: 24, teaching: "Jesús cercano a los enfermos, mujeres y marginados.", takeaway: "El Padre sale corriendo a abrazar al hijo pródigo." },
+                { key: "juan", name: "Juan", chapters: 21, teaching: "La intimidad con el Verbo de vida y el amor incondicional.", takeaway: "En Él estaba la vida, y la vida era la luz de los hombres." },
+                { key: "romanos", name: "Romanos", chapters: 16, teaching: "Justificados por gracia; nada nos separa de su amor.", takeaway: "Ya no hay condenación para los que están en Cristo." }
+            ]
+        };
+
+        const bibleTestamentSelect = document.getElementById('bible-testament-select');
+        const bibleBookSelect = document.getElementById('bible-book-select');
+        const bibleChapterSelect = document.getElementById('bible-chapter-select');
+        const readingTitleDisplay = document.getElementById('reading-title-display');
+        const versesContainer = document.getElementById('reading-verses-container');
+        const readingTeachingText = document.getElementById('reading-teaching-text');
+        const readingTakeawayText = document.getElementById('reading-takeaway-text');
+        const audioBookTitle = document.getElementById('audio-book-title');
+
+        function loadBooks() {
+            if (!bibleTestamentSelect || !bibleBookSelect) return;
+            const testament = bibleTestamentSelect.value;
+            const books = bibleMetadata[testament] || [];
+            bibleBookSelect.innerHTML = '';
+
+            books.forEach(b => {
+                const opt = document.createElement('option');
+                opt.value = b.key;
+                opt.textContent = b.name;
+                bibleBookSelect.appendChild(opt);
+            });
+            loadChapters();
+        }
+
+        function loadChapters() {
+            if (!bibleBookSelect || !bibleChapterSelect) return;
+            const testament = bibleTestamentSelect.value;
+            const bookKey = bibleBookSelect.value;
+            const book = (bibleMetadata[testament] || []).find(b => b.key === bookKey);
+            
+            bibleChapterSelect.innerHTML = '';
+            if (!book) return;
+
+            for (let c = 1; c <= book.chapters; c++) {
+                const opt = document.createElement('option');
+                opt.value = c;
+                opt.textContent = `Capítulo ${c}`;
+                bibleChapterSelect.appendChild(opt);
+            }
+            fetchChapter();
+        }
+
+        function fetchChapter() {
+            if (!bibleBookSelect || !bibleChapterSelect) return;
+            const testament = bibleTestamentSelect.value;
+            const bookKey = bibleBookSelect.value;
+            const chapterNum = bibleChapterSelect.value || "1";
+            const book = (bibleMetadata[testament] || []).find(b => b.key === bookKey);
+
+            if (!book) return;
+
+            if (readingTitleDisplay) readingTitleDisplay.textContent = `${book.name} — Capítulo ${chapterNum}`;
+            if (audioBookTitle) audioBookTitle.textContent = `${book.name} ${chapterNum}`;
+            if (readingTeachingText) readingTeachingText.textContent = book.teaching;
+            if (readingTakeawayText) readingTakeawayText.textContent = book.takeaway;
+
+            if (versesContainer) {
+                versesContainer.innerHTML = `
+                    <p class="verse-block"><span class="verse-num">1</span> Este es el pasaje de ${book.name} ${chapterNum}.</p>
+                    <p class="verse-block"><span class="verse-num">2</span> ${book.teaching}</p>
+                    <p class="verse-block"><span class="verse-num">3</span> ${book.takeaway}</p>
+                `;
+            }
+        }
+
+        if (bibleTestamentSelect && bibleBookSelect && bibleChapterSelect) {
+            bibleTestamentSelect.addEventListener('change', loadBooks);
+            bibleBookSelect.addEventListener('change', loadChapters);
+            bibleChapterSelect.addEventListener('change', fetchChapter);
+            loadBooks();
+        }
+
+        // 3. CHAT EN VIVO (EVITA LA RECARGA DE PÁGINA)
+        const chatLoginForm = document.getElementById('chat-login-form');
+        const chatLoginScreen = document.getElementById('chat-login-screen');
+        const chatActiveScreen = document.getElementById('chat-active-screen');
+        const chatUsernameInput = document.getElementById('chat-username-input');
+        const currentUserDisplay = document.getElementById('current-user-display');
+        const btnLogoutChat = document.getElementById('btn-logout-chat');
+
+        if (chatLoginForm) {
+            chatLoginForm.addEventListener('submit', function(e) {
+                e.preventDefault(); // Detiene el salto hacia arriba
+                const name = chatUsernameInput.value.trim();
+                if (!name) return;
+
+                chatLoginScreen.style.display = 'none';
+                chatActiveScreen.style.display = 'flex';
+                if (currentUserDisplay) currentUserDisplay.textContent = name;
+            });
+        }
+
+        if (btnLogoutChat) {
+            btnLogoutChat.addEventListener('click', function(e) {
+                e.preventDefault();
+                chatActiveScreen.style.display = 'none';
+                chatLoginScreen.style.display = 'block';
+                if (chatUsernameInput) chatUsernameInput.value = '';
+            });
+        }
+    });
+    </script>
 </body>
 </html>
