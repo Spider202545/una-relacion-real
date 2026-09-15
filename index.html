@@ -8,6 +8,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos optimizados para los contenedores y botones de expansión '+' */
+        .load-more-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+            width: 100%;
+            grid-column: 1 / -1;
+        }
+        .btn-load-more {
+            background-color: var(--card-bg, #181b22);
+            border: 1px solid var(--accent, #3b82f6);
+            color: #93c5fd;
+            padding: 12px 28px;
+            border-radius: 30px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            transition: all 0.25s ease;
+        }
+        .btn-load-more:hover {
+            background-color: var(--accent, #3b82f6);
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(59, 130, 246, 0.4);
+        }
+        .btn-load-more .plus-icon {
+            font-size: 1.2rem;
+            font-weight: 800;
+            background: rgba(255,255,255,0.15);
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
 </head>
 <body>
 
@@ -53,7 +95,7 @@
         </div>
     </header>
 
-    <!-- NUEVA SECCIÓN: GUÍA PARA INTROVERTIDOS, SOCIALIZAR Y SUPERAR EL MIEDO AL RECHAZO -->
+    <!-- GUÍA PARA INTROVERTIDOS -->
     <section id="guia-introvertidos" class="section introverts-guide-section">
         <div class="container">
             <div class="guide-badge-wrapper">
@@ -62,7 +104,6 @@
             <h2 class="section-title">Refugio para introvertidos: Conectar sin perder tu esencia</h2>
             <p class="section-subtitle">Ser callado, analítico y reservado no es un defecto que tengas que arreglar. Es tu forma de habitar el mundo. Aprende a hacer amistades reales y soltar el miedo al rechazo a tu propio ritmo.</p>
 
-            <!-- Pilares Fundamentales -->
             <div class="introvert-pillars-grid">
                 <div class="pillar-card">
                     <span class="pillar-icon">🎯</span>
@@ -83,7 +124,6 @@
                 </div>
             </div>
 
-            <!-- Panel de Situaciones Prácticas Paso a Paso -->
             <div class="introvert-toolkit-card">
                 <div class="toolkit-header">
                     <span class="tool-badge">Herramientas Cotidianas</span>
@@ -107,7 +147,6 @@
                     </div>
                 </div>
 
-                <!-- Oración de Confianza para antes de salir -->
                 <div class="introvert-prayer-box">
                     <div class="prayer-box-top">
                         <span class="box-icon">🕊️</span>
@@ -122,7 +161,7 @@
         </div>
     </section>
 
-    <!-- SECCIÓN: PETICIONES DE ORACIÓN INTERACTIVAS (LLEVAR LA CARGA JUNTOS) -->
+    <!-- PETICIONES DE ORACIÓN -->
     <section id="peticiones-oracion" class="section prayer-requests-section">
         <div class="container">
             <div class="guide-badge-wrapper">
@@ -145,11 +184,17 @@
                 </form>
             </div>
 
+            <!-- Feed de Peticiones y Botón '+' -->
             <div id="prayer-requests-feed" class="prayer-requests-grid"></div>
+            <div id="load-more-prayers-box" class="load-more-container" style="display: none;">
+                <button type="button" id="btn-load-more-prayers" class="btn-load-more">
+                    <span class="plus-icon">+</span> Ver más peticiones de oración
+                </button>
+            </div>
         </div>
     </section>
 
-    <!-- SECCIÓN: BUSCADOR DE RESPUESTAS DIRECTAS (DILEMAS JUVENILES) -->
+    <!-- DILEMAS JUVENILES -->
     <section id="dilemas-juveniles" class="section dilemmas-section">
         <div class="container">
             <div class="guide-badge-wrapper">
@@ -175,7 +220,7 @@
         </div>
     </section>
 
-    <!-- SECCIÓN: BIBLIA COMPLETA -->
+    <!-- BIBLIA COMPLETA (66 LIBROS) -->
     <section id="biblia-interactiva" class="section bible-reader-section">
         <div class="container">
             <div class="guide-badge-wrapper">
@@ -244,7 +289,7 @@
         </div>
     </section>
 
-    <!-- SECCIÓN: CHAT & COMUNIDAD GLOBAL CON FILTRO ROBLOX -->
+    <!-- CHAT EN VIVO Y COMUNIDAD GLOBAL -->
     <section id="comunidad-chat" class="section community-section-main">
         <div class="container">
             <div class="community-badge-wrapper">
@@ -321,7 +366,7 @@
         </div>
     </section>
 
-    <!-- SECCIÓN: HISTORIAS, ANÉCDOTAS Y TESTIMONIOS -->
+    <!-- TESTIMONIOS Y ANÉCDOTAS -->
     <section id="historias-comunidad" class="section testimonials-section">
         <div class="container">
             <h2 class="section-title">No estás solo en esto</h2>
@@ -349,11 +394,17 @@
                 </form>
             </div>
 
+            <!-- Feed de Testimonios y Botón '+' -->
             <div id="stories-grid-feed" class="testimonials-grid"></div>
+            <div id="load-more-stories-box" class="load-more-container" style="display: none;">
+                <button type="button" id="btn-load-more-stories" class="btn-load-more">
+                    <span class="plus-icon">+</span> Ver más testimonios
+                </button>
+            </div>
         </div>
     </section>
 
-    <!-- SECCIÓN: Muro Global de Desahogo con Respuesta del Padre -->
+    <!-- MURO ANÓNIMO Y CARTAS DE TU PADRE -->
     <section id="muro-global" class="section wall-section">
         <div class="container">
             <h2 class="section-title">El Muro de Desahogo y Cartas de tu Padre</h2>
@@ -391,11 +442,17 @@
                 <button type="button" class="filter-btn" data-filter="Agradecimiento sincero">Agradecimientos</button>
             </div>
 
+            <!-- Feed de Muro Anónimo y Botón '+' -->
             <div id="testimonies-feed" class="testimonies-feed-grid"></div>
+            <div id="load-more-wall-box" class="load-more-container" style="display: none;">
+                <button type="button" id="btn-load-more-wall" class="btn-load-more">
+                    <span class="plus-icon">+</span> Ver más desahogos y respuestas
+                </button>
+            </div>
         </div>
     </section>
 
-    <!-- Sección: Palabras cuando no tienes palabras -->
+    <!-- ORACIONES REALES -->
     <section id="oraciones-reales" class="section prayers-section">
         <div class="container">
             <div class="prayer-badge-wrapper">
@@ -433,7 +490,7 @@
         </div>
     </section>
 
-    <!-- Sección: Lujuria, Culpa y Libertad Real -->
+    <!-- BATALLAS & PUREZA -->
     <section id="libertad" class="section freedom-section">
         <div class="container">
             <div class="freedom-badge-wrapper">
@@ -480,7 +537,7 @@
         </div>
     </section>
 
-    <!-- Buscador de Consuelo por Emoción -->
+    <!-- BUSCADOR DE CONSUELO -->
     <section id="consuelo" class="section comfort-section">
         <div class="container">
             <h2 class="section-title">¿Qué llevas en el pecho ahora mismo?</h2>
@@ -516,7 +573,7 @@
         </div>
     </section>
 
-    <!-- Sección de Contraste -->
+    <!-- SECCIÓN DE CONTRASTE -->
     <section class="section contrast-section">
         <div class="container">
             <h2 class="section-title">Cambiando la perspectiva</h2>
@@ -535,7 +592,7 @@
         </div>
     </section>
 
-    <!-- Sección: Jesús en lo Cotidiano -->
+    <!-- JESÚS EN LO COTIDIANO -->
     <section class="section stories-section">
         <div class="container">
             <h2 class="section-title">Jesús en lo cotidiano</h2>
@@ -563,7 +620,7 @@
         </div>
     </section>
 
-    <!-- Sección: Respuestas a Preguntas Difíciles -->
+    <!-- PREGUNTAS DIFÍCILES -->
     <section class="section hard-questions-section">
         <div class="container">
             <h2 class="section-title">Preguntas difíciles sin rodeos</h2>
@@ -591,7 +648,7 @@
         </div>
     </section>
 
-    <!-- Sección: Respuestas Rápidas sobre la Vida Real -->
+    <!-- RESPUESTAS RÁPIDAS SOBRE LA VIDA REAL -->
     <section class="section topic-answers-section">
         <div class="container">
             <h2 class="section-title">¿Qué dice Jesús sobre la vida real?</h2>
@@ -613,7 +670,7 @@
         </div>
     </section>
 
-    <!-- Sección: Selector de Estado de Ánimo -->
+    <!-- SELECTOR DE ÁNIMO -->
     <section id="animo" class="section mood-section">
         <div class="container">
             <h2 class="section-title">¿Cómo llegas hoy?</h2>
@@ -633,7 +690,7 @@
         </div>
     </section>
 
-    <!-- Sección: Iglesia Virtual en Roblox -->
+    <!-- COMUNIDAD ROBLOX -->
     <section id="comunidad-roblox" class="section roblox-section">
         <div class="container">
             <div class="roblox-badge-wrapper">
@@ -696,7 +753,7 @@
         </div>
     </section>
 
-    <!-- Dinámica Interactiva: Reflexión Diaria -->
+    <!-- REFLEXIÓN INTERACTIVA -->
     <section id="reflexion" class="section interactive-section">
         <div class="container">
             <h2 class="section-title">Un momento con tu Padre</h2>
@@ -713,7 +770,7 @@
         </div>
     </section>
 
-    <!-- Cierre e Invitación -->
+    <!-- PIE DE PÁGINA -->
     <footer class="footer">
         <div class="container">
             <p>No se trata de religión estricta, sino de encontrar paz en el día a día.</p>
@@ -721,12 +778,12 @@
         </div>
     </footer>
 
-    <!-- MOTOR JAVASCRIPT COMPLETO E INTEGRADO -->
+    <!-- MOTOR JAVASCRIPT CON AUTO-GUARDADO TOTAL Y PAGINACIÓN ILIMITADA '+' -->
     <script>
     document.addEventListener("DOMContentLoaded", () => {
 
         // ==========================================================================
-        // 0. NAVEGACIÓN Y UTILIDADES
+        // 0. NAVEGACIÓN Y UTILIDADES GENERALES
         // ==========================================================================
         const navPills = document.querySelectorAll('.nav-pill');
         navPills.forEach(pill => {
@@ -825,33 +882,23 @@
         }
 
         // ==========================================================================
-        // 2. PETICIONES DE ORACIÓN INTERACTIVAS
+        // 2. PETICIONES DE ORACIÓN INTERACTIVAS (CON BOTÓN + DE 10 EN 10)
         // ==========================================================================
         const initialPrayerRequests = [
-            {
-                id: 1,
-                author: "Camila, 18 años",
-                topic: "Paz para mi mente",
-                details: "Tengo semanas sintiéndome abrumada con mis estudios y el miedo a no ser suficiente. Porfa oren para que pueda dormir con tranquilidad.",
-                prayingCount: 28,
-                time: "Hace 40 min"
-            },
-            {
-                id: 2,
-                author: "Anónimo",
-                topic: "Sanidad en mi familia",
-                details: "Mis papás están pasando por una crisis pesada y en mi casa solo hay gritos y tensión. Necesito fuerzas para no perder la calma.",
-                prayingCount: 42,
-                time: "Hace 2 horas"
-            }
+            { id: 1, author: "Camila, 18 años", topic: "Paz para mi mente", details: "Tengo semanas sintiéndome abrumada con mis estudios y el miedo a no ser suficiente. Porfa oren para que pueda dormir con tranquilidad.", prayingCount: 28, time: "Hace 40 min" },
+            { id: 2, author: "Anónimo", topic: "Sanidad en mi familia", details: "Mis papás están pasando por una crisis pesada y en mi casa solo hay gritos y tensión. Necesito fuerzas para no perder la calma.", prayingCount: 42, time: "Hace 2 horas" }
         ];
 
         let prayerRequestsList = JSON.parse(localStorage.getItem('prayer_requests_data')) || initialPrayerRequests;
+        let visiblePrayersCount = 10;
+
         const prayerReqForm = document.getElementById('prayer-request-form');
         const reqAuthorInput = document.getElementById('req-author-input');
         const reqTopicInput = document.getElementById('req-topic-input');
         const reqDetailsInput = document.getElementById('req-details-input');
         const prayerRequestsFeed = document.getElementById('prayer-requests-feed');
+        const loadMorePrayersBox = document.getElementById('load-more-prayers-box');
+        const btnLoadMorePrayers = document.getElementById('btn-load-more-prayers');
 
         window.addPrayerSupport = function(id) {
             const item = prayerRequestsList.find(r => r.id === id);
@@ -865,7 +912,10 @@
         function renderPrayerRequests() {
             if (!prayerRequestsFeed) return;
             prayerRequestsFeed.innerHTML = '';
-            prayerRequestsList.forEach(req => {
+            
+            const itemsToShow = prayerRequestsList.slice(0, visiblePrayersCount);
+
+            itemsToShow.forEach(req => {
                 const card = document.createElement('div');
                 card.className = 'prayer-req-card';
                 card.innerHTML = `
@@ -885,6 +935,17 @@
                     </div>
                 `;
                 prayerRequestsFeed.appendChild(card);
+            });
+
+            if (loadMorePrayersBox) {
+                loadMorePrayersBox.style.display = prayerRequestsList.length > visiblePrayersCount ? 'flex' : 'none';
+            }
+        }
+
+        if (btnLoadMorePrayers) {
+            btnLoadMorePrayers.addEventListener('click', () => {
+                visiblePrayersCount += 10;
+                renderPrayerRequests();
             });
         }
 
@@ -921,7 +982,7 @@
         renderPrayerRequests();
 
         // ==========================================================================
-        // 3. BIBLIA COMPLETA (66 Libros & Audio)
+        // 3. BIBLIA COMPLETA CANÓNICA (66 LIBROS COMPLETOS)
         // ==========================================================================
         const bibleMetadata = {
             antiguo: [
@@ -995,6 +1056,7 @@
                 { key: "apocalipsis", name: "Apocalipsis", chapters: 22, teaching: "La victoria final: Dios enjugará toda lágrima de nuestros ojos.", takeaway: "No habrá más muerte, ni llanto, ni clamor, ni dolor." }
             ]
         };
+
         const bibleTestamentSelect = document.getElementById('bible-testament-select');
         const bibleBookSelect = document.getElementById('bible-book-select');
         const bibleChapterSelect = document.getElementById('bible-chapter-select');
@@ -1065,7 +1127,7 @@
                     <p class="verse-block"><span class="verse-num">1</span> Este es el pasaje del libro de ${book.name}, capítulo ${chapterNum}.</p>
                     <p class="verse-block"><span class="verse-num">2</span> ${book.teaching}</p>
                     <p class="verse-block"><span class="verse-num">3</span> ${book.takeaway}</p>
-                    <p class="verse-block"><span class="verse-num">4</span> Camina hoy en confianza: el amor y la paciencia de tu Padre están contigo.</p>
+                    <p class="verse-block"><span class="verse-num">4</span> Camina hoy en confianza: el amor y la paciencia de tu Padre están contigo en cada momento.</p>
                 `;
             }
             if (readingTimeDisplay) readingTimeDisplay.textContent = "⏱ 2 min de lectura";
@@ -1121,7 +1183,7 @@
         }
 
         // ==========================================================================
-        // 4. CHAT COMUNITARIO EN VIVO (ENVÍO ESTILO DISCORD)
+        // 4. CHAT COMUNITARIO EN VIVO (CON PERSISTENCIA AUTOMÁTICA)
         // ==========================================================================
         let currentChatUser = localStorage.getItem('chat_current_user') || null;
 
@@ -1231,24 +1293,32 @@
         checkChatStatus();
 
         // ==========================================================================
-        // 5. TESTIMONIOS Y HISTORIAS ("NO ESTÁS SOLO")
+        // 5. TESTIMONIOS Y ANÉCDOTAS (CON BOTÓN + DE 10 EN 10)
         // ==========================================================================
         const initialStories = [
             { id: 1, author: "Mateo, 20 años", badge: "De la culpa a la paz", content: "Crecí creyendo que si cometía un error, Dios me tachaba de su lista. Cuando entendí que Él es un Padre que me acompaña en mis caídas, se me quitó un peso enorme." },
-            { id: 2, author: "Sofía, 22 años", badge: "Orar sin libreto", content: "Odiaba rezar con frases repetitivas. Un día hablé con Él como hablaría con alguien sentado al lado mío en mi pieza. Por primera vez sentí paz." }
+            { id: 2, author: "Sofía, 22 años", badge: "Orar sin libreto", content: "Odiaba rezar con frases repetitivas. Un día hablé con Él como hablaría con alguien sentado al lado mío en mi pieza. Por primera vez sentí paz." },
+            { id: 3, author: "Lucas, 19 años", badge: "Dudas sin miedo", content: "En mi entorno, hacer preguntas difíciles era pecado. Descubrí al Jesús real: el que debatía con paciencia y no huía de las dudas. Hoy tengo una amistad honesta con Él sin fingir que lo entiendo todo." }
         ];
 
         let storiesList = JSON.parse(localStorage.getItem('community_stories_feed')) || initialStories;
+        let visibleStoriesCount = 10;
+
         const shareStoryForm = document.getElementById('share-story-form');
         const storyAuthorInput = document.getElementById('story-author-input');
         const storyBadgeInput = document.getElementById('story-badge-input');
         const storyContentInput = document.getElementById('story-content-input');
         const storiesGridFeed = document.getElementById('stories-grid-feed');
+        const loadMoreStoriesBox = document.getElementById('load-more-stories-box');
+        const btnLoadMoreStories = document.getElementById('btn-load-more-stories');
 
         function renderStories() {
             if (!storiesGridFeed) return;
             storiesGridFeed.innerHTML = '';
-            storiesList.forEach(story => {
+            
+            const itemsToShow = storiesList.slice(0, visibleStoriesCount);
+
+            itemsToShow.forEach(story => {
                 const card = document.createElement('div');
                 card.className = 'testimonial-card';
                 card.innerHTML = `
@@ -1261,6 +1331,17 @@
                     </div>
                 `;
                 storiesGridFeed.appendChild(card);
+            });
+
+            if (loadMoreStoriesBox) {
+                loadMoreStoriesBox.style.display = storiesList.length > visibleStoriesCount ? 'flex' : 'none';
+            }
+        }
+
+        if (btnLoadMoreStories) {
+            btnLoadMoreStories.addEventListener('click', () => {
+                visibleStoriesCount += 10;
+                renderStories();
             });
         }
 
@@ -1289,25 +1370,68 @@
         renderStories();
 
         // ==========================================================================
-        // 6. MURO ANÓNIMO Y CARTAS DEL PADRE
+        // 6. MURO ANÓNIMO Y CARTAS DEL PADRE (CON BOTÓN + DE 10 EN 10)
         // ==========================================================================
         const fatherReplies = {
-            pureza: "Mírame a los ojos: no te tengo asco ni te voy a soltar la mano por esto. Sé perfectamente el vacío y la soledad que sentías; sé que buscabas un anestésico para tu mente. Lávate la cara, respira hondo y vuelve a caminar conmigo hoy. No esperes tres días para hablarme: te estoy esperando ahora mismo con un abrazo.",
-            cansancio: "Sé lo agotado que estás de fingir que puedes con todo. No te pedí que fueras de hierro ni que sostengas el mundo sobre tus hombros. Cierra los ojos, suelta la mochila y descansa. Yo cuido de ti.",
-            dolor: "Vi cada lágrima que cayó cuando nadie te miraba y conozco ese nudo en la garganta. No estás abandonado en este valle; sostendré tu mano hasta que vuelva a salir el sol.",
-            dudas: "Tus preguntas y dudas sobre el futuro no me ofenden ni me alejan. Prefiero mil veces tu duda sincera que una fe fingida por compromiso. Camina paso a paso conmigo."
+            pureza: [
+                "Mírame a los ojos: no te tengo asco ni te voy a soltar la mano por esto. Sé perfectamente el vacío y la soledad que sentías; sé que buscabas un anestésico para tu mente. Lávate la cara, respira hondo y vuelve a caminar conmigo hoy. No esperes tres días para hablarme: te estoy esperando ahora mismo con un abrazo.",
+                "Sé lo pesado que se siente el pecho cuando se apaga la pantalla y llega ese silencio helado. Pero escucha esto: tu valor no se destruyó hace diez minutos. No eres un caso perdido ni un hipócrita; eres mi hijo dando una pelea difícil en un mundo saturado. Suelta la culpa que te paraliza y déjame ayudarte a levantarte.",
+                "Cuando Pedro me falló por miedo, no le grité ni lo expulsé; le preparé el desayuno en la playa. Contigo es exactamente igual. Deja de pelear solo. Cuando sientas el impulso otra vez, no te encierres: háblale en voz baja en ese mismo segundo. Estoy aquí para protegerte, no para castigarte."
+            ],
+            cansancio: [
+                "Sé lo agotado que estás de fingir que puedes con todo. No te pedí que fueras de hierro ni que sostengas el mundo sobre tus hombros. Hoy no necesitas darme discursos largos ni esforzarte por parecer fuerte. Cierra los ojos, suelta la mochila y descansa. Yo cuido de ti mientras duermes.",
+                "Te he visto caminar en automático estos días, sonriendo por fuera para que nadie pregunte y sintiéndote completamente seco por dentro. No estás solo en esa rutina pesada. Permítete parar dos minutos. Mi presencia no es otra tarea en tu lista; es el lugar donde puedes simplemente respirar.",
+                "No tienes que demostrarme nada. Me alegra que hayas soltado esto aquí en lugar de guardártelo hasta reventar. Respira con calma: las cosas no se van a derrumbar si hoy bajas los brazos y me dejas llevar la carga a mí."
+            ],
+            dolor: [
+                "Vi cada lágrima que cayó cuando nadie te miraba y conozco ese nudo en la garganta. No te voy a dar explicaciones frías ni a decirte que 'no es para tanto'. Tu dolor me importa porque tú me importas. Apóyate en mí todo lo que necesites; no me voy a apartar de tu lado en esta tormenta.",
+                "A veces la vida golpea de una forma injusta y duele tanto que parece que el pecho no aguanta. No tienes que fingir que estás en paz. Jesús mismo lloró amargamente frente a la pérdida. Aquí tienes permiso de desahogarte y llorar sin miedo.",
+                "Aunque hoy sientas que caminas en una noche oscura donde no se ve la salida, prométeme que no te vas a rendir. No estás abandonado en este valle. Sostendré tu mano hasta que vuelva a salir el sol."
+            ],
+            dudas: [
+                "Tus preguntas y tus miedos sobre el futuro no me ofenden ni me alejan. Prefiero mil veces tu duda sincera que una fe de palabras vacías repetidas por costumbre. No necesitas tener los próximos cinco años resueltos hoy; solo necesitas dar el paso de hoy tomado de mi mano.",
+                "Sé que la incertidumbre te quita el sueño y que miras a los demás sintiendo que todos tienen un rumbo menos tú. No estás atrasado ni perdido. Estoy construyendo raíces en ti que ahora no ves. Confía en mi tiempo: no te voy a dejar a la deriva.",
+                "No temas equivocarte de camino buscando con honestidad. Si te desvías, yo mismo saldré a buscarte para traerte de vuelta con calma. Camina con tranquilidad: mi fidelidad no depende de que tú lo tengas todo claro."
+            ],
+            agradecido: [
+                "Me alegra tanto verte en paz hoy. Saber que reconoces la luz en medio de los días difíciles llena mi corazón de gozo. Disfruta este momento, guárdalo en tu memoria y recuerda que siempre estoy aquí celebrando tus alegrías.",
+                "Gracias por acordarte de mí no solo cuando aprieta el dolor, sino también cuando hay tranquilidad y gratitud en tu vida. Es hermoso caminar esta amistad contigo día a día."
+            ]
         };
 
+        function getFatherReply(tag, userText) {
+            const textLower = userText.toLowerCase();
+            let pool = fatherReplies.cansancio;
+
+            if (tag === "Batallas con la pureza" || textLower.includes("porno") || textLower.includes("masturb") || textLower.includes("lujuria") || textLower.includes("recaí") || textLower.includes("fallé")) {
+                pool = fatherReplies.pureza;
+            } else if (tag === "En medio del dolor" || textLower.includes("llor") || textLower.includes("dolor") || textLower.includes("triste") || textLower.includes("perdí")) {
+                pool = fatherReplies.dolor;
+            } else if (tag === "Dudas y batallas" || textLower.includes("futuro") || textLower.includes("miedo") || textLower.includes("duda") || textLower.includes("no sé qué")) {
+                pool = fatherReplies.dudas;
+            } else if (tag === "Agradecimiento sincero" || textLower.includes("gracias") || textLower.includes("paz")) {
+                pool = fatherReplies.agradecido;
+            }
+            return pool[Math.floor(Math.random() * pool.length)];
+        }
+
         const defaultTestimonies = [
-            { id: 1, tag: "Batallas con la pureza", text: "Acabo de caer de nuevo con el celular en mi pieza. Me da un asco tremendo de mí mismo y siento que Dios se cansó de mí.", time: "Hace 20 min", supportCount: 45, fatherReply: fatherReplies.pureza },
-            { id: 2, tag: "Desahogo profundo", text: "No tengo fuerzas para aparentar que todo está bien. Solo cerré los ojos y le dije a Dios: 'No tengo palabras hoy, solo cansancio'.", time: "Hace 2 horas", supportCount: 19, fatherReply: fatherReplies.cansancio }
+            { id: 1, tag: "Batallas con la pureza", text: "Acabo de caer de nuevo con el celular a solas en mi pieza. Llevaba 5 días bien y volví a fallar. Me da un asco tremendo de mí mismo, siento que no tengo perdón y que Dios ya debe estar harto de escucharme prometer lo mismo cada semana.", time: "Hace 20 min", supportCount: 45, fatherReply: "Mírame a los ojos: no te tengo asco ni te voy a soltar la mano por esto. Sé perfectamente el vacío y la soledad que sentías antes de tocar esa pantalla; sé que buscabas un anestésico para tu mente. Odio esa trampa porque te roba la paz, pero a ti te amo exactamente igual que ayer. Lávate la cara, respira hondo y vuelve a caminar conmigo hoy. No esperes tres días para hablarme: te espero con los brazos abiertos ahora mismo." },
+            { id: 2, tag: "Desahogo profundo", text: "Hoy fue uno de esos días donde siento que camino en automático. No tengo fuerzas para aparentar que todo está bien frente a mi familia. Solo cerré los ojos dos minutos en el bus y le dije a Dios: 'No tengo palabras hoy, solo cansancio de todo'.", time: "Hace 2 horas", supportCount: 19, fatherReply: "Sé lo agotado que estás de fingir que puedes con todo frente a los demás. No te pedí que fueras de hierro ni que sostengas el mundo sobre tus hombros. Hoy no necesitas darme discursos largos ni sonrisas forzadas: cierra los ojos, suelta la mochila y descansa en paz. Yo cuido de ti." },
+            { id: 3, tag: "Dudas y batallas", text: "Toda mi vida me dijeron que si dudaba o hacía preguntas difíciles sobre mi fe me iba a ir al infierno. Viví con terror infantil por años. Tengo miedo al futuro y a veces no sé si realmente encajo en este mundo.", time: "Ayer", supportCount: 31, fatherReply: "Tus preguntas y tus miedos no me ofenden ni me alejan. Los hombres religiosos le tienen miedo a las preguntas, pero yo no. Prefiero mil veces tu duda honesta que una religión de caretas. No tienes que resolver los próximos diez años hoy; camina paso a paso conmigo, yo jamás te dejaré a la deriva." }
         ];
 
         let testimoniesList = JSON.parse(localStorage.getItem('global_testimonies_feed')) || defaultTestimonies;
+        let currentWallFilter = 'todos';
+        let visibleWallCount = 10;
+
         const globalWallForm = document.getElementById('global-wall-form');
         const testimonyInput = document.getElementById('testimony-input');
         const testimonyTag = document.getElementById('testimony-tag');
         const testimoniesFeed = document.getElementById('testimonies-feed');
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const loadMoreWallBox = document.getElementById('load-more-wall-box');
+        const btnLoadMoreWall = document.getElementById('btn-load-more-wall');
 
         window.supportTestimony = function(id) {
             const item = testimoniesList.find(t => t.id === id);
@@ -1321,7 +1445,20 @@
         function renderWall() {
             if (!testimoniesFeed) return;
             testimoniesFeed.innerHTML = '';
-            testimoniesList.forEach(item => {
+
+            const filtered = currentWallFilter === 'todos' 
+                ? testimoniesList 
+                : testimoniesList.filter(item => item.tag === currentWallFilter);
+
+            const itemsToShow = filtered.slice(0, visibleWallCount);
+
+            if (itemsToShow.length === 0) {
+                testimoniesFeed.innerHTML = '<p style="text-align: center; color: var(--text-muted); padding: 30px;">Aún no hay mensajes en esta categoría. Sé el primero en dejar uno anónimo.</p>';
+                if (loadMoreWallBox) loadMoreWallBox.style.display = 'none';
+                return;
+            }
+
+            itemsToShow.forEach(item => {
                 const card = document.createElement('div');
                 card.className = 'testimony-card-item';
                 card.innerHTML = `
@@ -1349,6 +1486,17 @@
                 `;
                 testimoniesFeed.appendChild(card);
             });
+
+            if (loadMoreWallBox) {
+                loadMoreWallBox.style.display = filtered.length > visibleWallCount ? 'flex' : 'none';
+            }
+        }
+
+        if (btnLoadMoreWall) {
+            btnLoadMoreWall.addEventListener('click', () => {
+                visibleWallCount += 10;
+                renderWall();
+            });
         }
 
         if (globalWallForm) {
@@ -1358,10 +1506,7 @@
                 if (!text) return;
                 const tag = testimonyTag.value;
 
-                let reply = fatherReplies.cansancio;
-                if (tag.includes("pureza")) reply = fatherReplies.pureza;
-                else if (tag.includes("dolor")) reply = fatherReplies.dolor;
-                else if (tag.includes("Dudas")) reply = fatherReplies.dudas;
+                const reply = getFatherReply(tag, text);
 
                 testimoniesList.unshift({
                     id: Date.now(),
@@ -1377,6 +1522,17 @@
                 renderWall();
             });
         }
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentWallFilter = btn.getAttribute('data-filter');
+                visibleWallCount = 10;
+                renderWall();
+            });
+        });
+
         renderWall();
 
         // ==========================================================================
@@ -1385,18 +1541,33 @@
         const realPrayersData = {
             insomnio: {
                 scenario: "Situación: Insomnio a las 3:00 AM y sobrepensando",
-                text: '"Papá, son las tres de la mañana y mi cabeza sigue dando vueltas a mil cosas que no puedo resolver ahora. Hoy no vengo a pedirte cosas con elocuencia; solo vengo a decirte que estoy cansado. Toma mis pendientes, mis dudas de mañana y el miedo a fallar. Acompáñame en esta pieza en silencio y dame la tranquilidad para cerrar los ojos sabiendo que tú estás despierto cuidando de mí."',
+                text: '"Papá, son las tres de la mañana y mi cabeza sigue dando vueltas a mil cosas que no puedo resolver ahora. Siento un nudo en el estómago y me cansa no poder apagar este ruido. Hoy no vengo a pedirte cosas con elocuencia; solo vengo a decirte que estoy cansado. Toma mis pendientes, mis dudas de mañana y el miedo a fallar. Te entrego esta noche. Acompáñame en esta pieza en silencio y dame la tranquilidad para cerrar los ojos sabiendo que tú estás despierto cuidando de mí."',
                 whisper: 'Lo que tu Padre te responde: "Suelta la guardia, hijo. El mundo sigue girando bajo mi cuidado; tú solo descansa hoy."'
             },
             familia: {
-                scenario: "Situación: Conflictos o tensión en casa",
-                text: '"Papá, qué difícil se me hace estar en mi casa a veces. Pon un freno en mi boca para no responder con odio y cuida mi corazón para que no se vuelva frío. Si no puedo cambiar a mi familia hoy, al menos sé tú mi refugio seguro."',
-                whisper: 'Lo que tu Padre te responde: "Sé lo que duele tu hogar terrenal. Recuerda que siempre tienes un lugar de paz en mis brazos."'
+                scenario: "Situación: Conflictos, gritos o frialdad en casa",
+                text: '"Papá, qué difícil se me hace estar en mi casa a veces. Hay discusiones, palabras hirientes o un silencio incómodo que me deja con ganas de salir corriendo. Me cuesta no guardar rencor y me duele sentirme incomprendido por las personas que deberían cuidarme. Pon un freno en mi boca para no responder con odio y cuida mi corazón para que no se vuelva frío. Si no puedo cambiar a mi familia hoy, al menos sé tú mi refugio seguro."',
+                whisper: 'Lo que tu Padre te responde: "Sé lo que duele tu hogar terrenal. Recuerda que siempre tienes un lugar de paz y valor en mis brazos."'
             },
             examen: {
-                scenario: "Situación: Pánico por examen o futuro",
-                text: '"Papá, tengo el pecho apretado por lo que viene. Recuérdame que una nota o el veredicto de otros no define quién soy ni destruye mi futuro. Dame claridad mental y acompáñame en cada minuto."',
-                whisper: 'Lo que tu Padre te responde: "Haz lo mejor que puedas y déjame el resto a mí."'
+                scenario: "Situación: Pánico antes de una prueba, examen o entrevista",
+                text: '"Papá, tengo el pecho apretado por lo que viene hoy. Estudié y me esforcé (o quizás no tanto como quise), pero el miedo a quedarme en blanco y defraudar me está paralizando. Te pido que calmes mis manos y mis pensamientos. Recuérdame que una nota, un examen o el veredicto de otros no define quién soy ni destruye mi futuro. Dame claridad mental y acompáñame en cada minuto."',
+                whisper: 'Lo que tu Padre te responde: "Haz lo mejor que puedas y déjame el resto a mí. Tu valor para mí no depende de una calificación."'
+            },
+            silencio: {
+                scenario: "Situación: Cuando sientes que Dios no responde ni se siente",
+                text: '"Papá, te hablo con honestidad cruda: no siento nada. Siento que le hablo al techo y que el cielo está cerrado. Escucho a otros decir que te sienten tan cerca y yo solo siento un vacío silencioso. Pero hoy no decido creer en ti por una emoción pasajera, sino por fidelidad. Aunque hoy no te sienta, sé que estás aquí en mi pieza. Dame paciencia para aguantar este desierto y recuérdame que tu silencio no significa abandono."',
+                whisper: 'Lo que tu Padre te responde: "No me he movido de tu lado. Cuando menos me sientas, es cuando más cerca estoy sosteniéndote."'
+            },
+            soledad: {
+                scenario: "Situación: Soledad profunda en fin de semana",
+                text: '"Papá, abro el celular y parece que todo el mundo tiene planes, risas y amigos menos yo. Odio sentir que no encajo o que a nadie le importaría si hoy no estoy. Me duele este aislamiento. Ven y llena este espacio en mi cama. Enséñame a disfrutar mi propia compañía contigo y pon en mi camino personas sinceras con las que pueda ser yo mismo sin miedo a ser juzgado."',
+                whisper: 'Lo que tu Padre te responde: "Mírame a mí: jamás te he dejado solo ni un segundo. Para mí eres el tesoro más grande."'
+            },
+            rabia: {
+                scenario: "Situación: Rabia, frustración e impotencia con la vida",
+                text: '"Papá, hoy tengo rabia. Estoy molesto con cómo salieron las cosas, con lo injusta que se siente la vida y hasta me cuesta entender por qué permites que todo sea tan difícil para mí mientras a otros parece que todo les va bien. No te lo voy a endulzar: estoy enojado. Pero prefiero gritarte y llorar contigo antes que darte la espalda. Recibe mi furia y ayúdame a entender lo que hoy no tiene sentido."',
+                whisper: 'Lo que tu Padre te responde: "No me asusta tu enojo; me alegra que me lo cuentes a mí en lugar de tragarte el veneno. Aquí estoy para sanarte."'
             }
         };
 
@@ -1445,13 +1616,14 @@
             if (sosText) sosText.textContent = body;
             if (sosQuote) sosQuote.textContent = quote;
             sosDisplay.style.display = 'block';
+            sosDisplay.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }
 
         if (btnSosTemptation) {
             btnSosTemptation.addEventListener('click', () => {
                 setSosMessage(
                     "Suelta la pantalla, levántate y respira",
-                    "El impulso suele durar entre 10 y 15 minutos en su punto máximo. No intentes debatir acostado en la cama: ponte de pie, toma un vaso con agua o camina al patio. Háblale a Dios con franqueza: 'Acompáñame estos diez minutos'.",
+                    "El impulso suele durar entre diez y quince minutos en su punto máximo. No intentes debatir con tu cabeza acostado en la cama: ponte de pie, toma un vaso con agua, sal de la pieza o camina al patio. Háblale a Dios con franqueza: 'Tengo ganas de caer, no quiero esto, acompáñame estos diez minutos'. Él no se escandaliza de tus impulsos; quiere darte calma para superarlos.",
                     '"Fiel es Dios, que no los dejará ser tentados más de lo que pueden resistir."'
                 );
             });
@@ -1460,15 +1632,15 @@
         if (btnSosRelapse) {
             btnSosRelapse.addEventListener('click', () => {
                 setSosMessage(
-                    "No te escondas; la puerta sigue abierta",
-                    "Acabas de fallar y la cabeza te dice que Dios está harto de ti. Esa voz NO es la de tu Padre. Lávate la cara, respira hondo y dile: 'Papá, caí de nuevo, recíbeme'. Tu valor no disminuyó ni un milímetro.",
+                    "No te escondas; la puerta sigue abierta de par en par",
+                    "Acabas de fallar y la cabeza te está diciendo que eres un hipócrita y que Dios está harto de ti. Esa voz NO es la de tu Padre. El acusador te tienta con placer y luego te hunde con asco. Lávate la cara, respira hondo y dile: 'Papá, caí de nuevo, me duele haberte fallado y fallarme a mí mismo, pero elijo tu perdón antes que mi vergüenza'. Levántate hoy mismo. Tu valor ante Él no disminuyó ni un milímetro.",
                     '"Siete veces cae el justo, y vuelve a levantarse."'
                 );
             });
         }
 
         // ==========================================================================
-        // 9. SONIDO AMBIENTAL FLOTANTE
+        // 9. SONIDO AMBIENTAL FLOTANTE (WEB AUDIO API)
         // ==========================================================================
         let audioCtx = null;
         let ambientInterval = null;
